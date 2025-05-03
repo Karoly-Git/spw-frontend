@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-export default function MainNav() {
+export default function BottomNav() {
     const menuItems = [
         { name: 'Home', to: '/', isDisplayed: true },
         { name: 'Gallery', to: '/gallery', isDisplayed: true },
@@ -12,7 +12,7 @@ export default function MainNav() {
     ];
 
     return (
-        <nav className='main-nav'>
+        <nav className='bottom-nav'>
             <ul>
                 {menuItems.map(({ name, to, isDisplayed }) =>
                     isDisplayed && (
