@@ -24,4 +24,41 @@ nav ul li a:hover,
 nav ul li span:hover {
   background-color: white;
   color: black;
+}
+
+.mobile-nav {
+  display: flex;
+}
+.mobile-nav .mobile-nav-body {
+  padding: 2rem;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(75, 75, 75);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.mobile-nav .mobile-nav-body .main-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  min-width: 40%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 950px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  .mobile-nav {
+    display: none;
+  }
 }/*# sourceMappingURL=Navigations.css.map */
