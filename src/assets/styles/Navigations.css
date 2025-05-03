@@ -31,7 +31,7 @@ nav ul li span:hover {
 }
 .mobile-nav .mobile-nav-body {
   padding: 2rem;
-  top: 100px;
+  top: -380px;
   left: 0;
   width: 100%;
   background-color: rgb(75, 75, 75);
@@ -40,6 +40,7 @@ nav ul li span:hover {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  transition: all 350ms ease-in-out;
 }
 .mobile-nav .mobile-nav-body .main-menu-list {
   display: flex;
@@ -49,6 +50,10 @@ nav ul li span:hover {
   min-width: 40%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5019607843);
   padding-bottom: 1rem;
+}
+
+.open-mobile-nav .mobile-nav-body {
+  top: 100px;
 }
 
 @media (max-width: 950px) {

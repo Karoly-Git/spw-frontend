@@ -28,7 +28,7 @@ export default function MobileNav() {
 
 
     return (
-        <nav className='mobile-nav'>
+        <nav className={isMobileNavOpen ? "mobile-nav open-mobile-nav" : "mobile-nav"}>
             {!isMobileNavOpen ? (
                 <button onClick={toggleMobileMenu} className="icon-button" aria-label="Open menu">
                     <HamburgerIcon className="icon hamburger-icon" />
@@ -39,27 +39,27 @@ export default function MobileNav() {
                 </button>
             )}
 
-            {isMobileNavOpen &&
-                <div className='mobile-nav-body'>
-                    <ul className='main-menu-list'>
-                        {menuItems.map(({ name, to, isDisplayed }) =>
-                            isDisplayed && (
-                                <li key={to}>
-                                    <NavLink
-                                        to={to}
-                                        onClick={toggleMobileMenu}
-                                        className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
-                                    >
-                                        {name}
-                                    </NavLink>
-                                </li>
-                            )
-                        )}
-                    </ul>
+            <div className='mobile-nav-body'>
+                <ul className='main-menu-list'>
+                    {menuItems.map(({ name, to, isDisplayed }) =>
+                        isDisplayed && (
+                            <li key={to}>
+                                <NavLink
+                                    to={to}
+                                    onClick={toggleMobileMenu}
+                                    className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}
+                                >
+                                    {name}
+                                </NavLink>
+                            </li>
+                        )
+                    )}
+                </ul>
 
-                    <InfoNav closeMobileMenu={toggleMobileMenu} />
-                    <SocialNav closeMobileMenu={toggleMobileMenu} />
-                </div>}
+                <InfoNav closeMobileMenu={toggleMobileMenu} />
+
+                <SocialNav closeMobileMenu={toggleMobileMenu} />
+            </div>
         </nav>
     );
 }

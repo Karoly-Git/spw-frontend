@@ -34,7 +34,7 @@ nav {
 
     .mobile-nav-body {
         padding: 2rem;
-        top: 100px;
+        top: -380px;
         left: 0;
         width: 100%;
         background-color: rgb(75, 75, 75);
@@ -43,6 +43,7 @@ nav {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        transition: all 350ms ease-in-out;
 
         .main-menu-list {
             display: flex;
@@ -53,6 +54,12 @@ nav {
             border-bottom: 1px solid #ffffff80;
             padding-bottom: 1rem;
         }
+    }
+}
+
+.open-mobile-nav {
+    .mobile-nav-body {
+        top: 100px;
     }
 }
 
