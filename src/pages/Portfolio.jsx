@@ -41,35 +41,40 @@ export default function Portfolio() {
         {
             src: index1,
             alt: "Maternity Photos",
+            description: "Elegant and emotive portraits that capture the anticipation, beauty, and glow of motherhood before your baby arrives.",
             setIndex: setMaternityIndex,
         },
         {
             src: index2,
             alt: "Newborn Photos",
+            description: "Gentle, cozy, and artistic imagery to preserve those fleeting, magical early days of your newborn's life.",
             setIndex: setNewbornIndex,
         },
         {
             src: index3,
             alt: "Sitter Session Photos",
+            description: "Adorable milestones captured as your baby begins to sit up, smile, and show their developing personality.",
             setIndex: setSitterSessionIndex,
         },
         {
             src: index4,
             alt: "Family Photos",
+            description: "Candid and posed moments that tell the story of your family’s connection, laughter, and love.",
             setIndex: setFamilyIndex,
         },
         {
             src: index5,
             alt: "Cake Smash Photos",
+            description: "Colorful, fun-filled sessions that celebrate your baby’s first year with frosting, giggles, and lots of cake!",
             setIndex: setCakeSmashIndex,
         },
         {
             src: index6,
             alt: "Engagement Photos",
+            description: "Romantic and joyful storytelling imagery to capture the excitement and connection leading up to your big day.",
             setIndex: setEngagementIndex,
         }
     ];
-
 
     return (
         <div className='page portfolio-page'>
@@ -82,6 +87,7 @@ export default function Portfolio() {
                         <div className="image-item" key={index} onClick={() => image.setIndex(0)}>
                             <img src={image.src} alt={image.alt} loading="lazy" />
                             <div className="portfolio-name">{image.alt}</div>
+                            <div className="portfolio-description">{image.description}</div>
                         </div>
                     ))}
                 </div>
@@ -136,7 +142,3 @@ export default function Portfolio() {
         </div>
     );
 }
-
-
-
-

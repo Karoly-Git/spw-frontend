@@ -17,12 +17,43 @@ nav {
                 text-transform: uppercase;
                 padding: 0.25rem 0.75rem;
                 transition: all 250ms ease-in-out;
-                color: white;
+                color: rgb(190, 190, 190);
                 cursor: pointer;
 
                 &:hover {
-                    background-color: white;
-                    color: black;
+                    color: white;
+                }
+            }
+
+            .nav-link {
+                position: relative;
+                display: inline-block;
+
+                &.active-link {
+                    color: white;
+
+                    &::before,
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        border: 3px solid #007bff;
+                    }
+
+                    &::before {
+                        top: 0;
+                        left: 0;
+                        border-width: 3px 0 0 3px; // top and left borders only
+                        width: 8px;
+                        height: 8px;
+                    }
+
+                    &::after {
+                        bottom: 0;
+                        right: 0;
+                        border-width: 0 3px 3px 0; // bottom and right borders only
+                        width: 8px;
+                        height: 8px;
+                    }
                 }
             }
         }

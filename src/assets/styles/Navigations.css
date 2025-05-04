@@ -17,13 +17,38 @@ nav ul li span {
   text-transform: uppercase;
   padding: 0.25rem 0.75rem;
   transition: all 250ms ease-in-out;
-  color: white;
+  color: rgb(190, 190, 190);
   cursor: pointer;
 }
 nav ul li a:hover,
 nav ul li span:hover {
-  background-color: white;
-  color: black;
+  color: white;
+}
+nav ul li .nav-link {
+  position: relative;
+  display: inline-block;
+}
+nav ul li .nav-link.active-link {
+  color: white;
+}
+nav ul li .nav-link.active-link::before, nav ul li .nav-link.active-link::after {
+  content: "";
+  position: absolute;
+  border: 3px solid #007bff;
+}
+nav ul li .nav-link.active-link::before {
+  top: 0;
+  left: 0;
+  border-width: 3px 0 0 3px;
+  width: 8px;
+  height: 8px;
+}
+nav ul li .nav-link.active-link::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 3px 3px 0;
+  width: 8px;
+  height: 8px;
 }
 
 .mobile-nav {

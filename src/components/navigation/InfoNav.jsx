@@ -4,7 +4,7 @@ export default function InfoNav({ closeMobileMenu }) {
     const menuItems = [
         { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: true },
         { name: 'Contact', to: '/contact', isDisplayed: true },
-        { name: 'Policy', to: '/privacy-policy', isDisplayed: true }
+        { name: 'Privacy Policy', to: '/privacy-policy', isDisplayed: true }
     ];
 
     return (

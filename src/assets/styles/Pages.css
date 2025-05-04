@@ -705,6 +705,27 @@
 .testimonials-page .content .grid .card .learn-more-btn:hover {
   background-color: #e63946;
 }
+.testimonials-page .load-more-btn {
+  display: inline-block;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.testimonials-page .load-more-btn:hover {
+  background-color: #0062cc;
+}
+.testimonials-page .load-more-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.4);
+}
 
 .portfolio-page {
   background: url("../images/portfolio/bg.jpg");
@@ -748,8 +769,8 @@
 }
 .portfolio-page .content .image-grid .image-item .portfolio-name {
   position: absolute;
-  bottom: 1rem;
   left: 50%;
+  top: 1rem;
   transform: translateX(-50%);
   font-weight: bold;
   text-align: center;
@@ -757,6 +778,21 @@
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
+  z-index: 2;
+}
+.portfolio-page .content .image-grid .image-item .portfolio-description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  color: #eee;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  height: 4.75rem;
+  z-index: 1;
 }
 @media (max-width: 900px) {
   .portfolio-page .content .image-grid {
