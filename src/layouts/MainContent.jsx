@@ -9,6 +9,7 @@ import Testimonials from "../pages/Testimonials";
 import Portfolio from "../pages/Portfolio";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import PhotoAlbum from "../pages/PhotoAlbum";
+import PageNotFound from "../pages/PageNotFound";
 
 import {
     maternityPhotos,
@@ -24,7 +25,7 @@ export default function MainContent() {
     return (
         <main>
             <Routes>
-                <Route path='*' element={<h1>Page not found</h1>} />
+                <Route path='*' element={<PageNotFound />} />
 
                 <Route path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
@@ -37,15 +38,11 @@ export default function MainContent() {
                 <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
                 <Route path='/portfolio/maternity' element={<PhotoAlbum photos={maternityPhotos} albumName='Maternity photos' />} />
-
-                {/*<>
-                    <Route path='/portfolio/newborn' element={<PhotoAlbum photos={newbornPhotos} albumName='Newborn photos' />} />
-                    <Route path='/portfolio/sitter-session' element={<PhotoAlbum photos={sitterSessionPhotos} albumName='Sitter Session photos' />} />
-                    <Route path='/portfolio/family' element={<PhotoAlbum photos={familyPhotos} albumName='Family photos' />} />
-                    <Route path='/portfolio/cake-smash' element={<PhotoAlbum photos={cakeSmashPhotos} albumName='Cake Smash photos' />} />
-                    <Route path='/portfolio/engagement' element={<PhotoAlbum photos={engagementPhotos} albumName='Engagement photos' />} />
-                </>*/}
-
+                <Route path='/portfolio/newborn' element={<PhotoAlbum photos={newbornPhotos} albumName='Newborn photos' />} />
+                <Route path='/portfolio/sitter-session' element={<PhotoAlbum photos={sitterSessionPhotos} albumName='Sitter Session photos' />} />
+                <Route path='/portfolio/family' element={<PhotoAlbum photos={familyPhotos} albumName='Family photos' />} />
+                <Route path='/portfolio/cake-smash' element={<PhotoAlbum photos={cakeSmashPhotos} albumName='Cake Smash photos' />} />
+                <Route path='/portfolio/engagement' element={<PhotoAlbum photos={engagementPhotos} albumName='Engagement photos' />} />
             </Routes>
         </main>
     )
