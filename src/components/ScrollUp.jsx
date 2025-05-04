@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { FaArrowUp as ArrowIcon } from "react-icons/fa";
 
 export default function ScrollUp() {

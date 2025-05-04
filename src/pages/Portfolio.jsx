@@ -11,8 +11,6 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import { CiShare2 as ShareIcon } from "react-icons/ci";
-
 import {
     maternityPhotos,
     newbornPhotos,
@@ -28,6 +26,8 @@ import index3 from "../assets/images/portfolio/sitter-index.jpg";
 import index4 from "../assets/images/portfolio/family-index.jpg";
 import index5 from "../assets/images/portfolio/cakesmash-index.jpg";
 import index6 from "../assets/images/portfolio/engagement-index.jpg";
+
+import ShareButton from "../components/ShareButton.jsx";
 
 export default function Portfolio() {
     const [maternityIndex, setMaternityIndex] = useState(-1);
@@ -74,16 +74,7 @@ export default function Portfolio() {
     return (
         <div className='page portfolio-page'>
 
-            <div className='share-button'
-                onClick={() => {
-                    const shareUrl = encodeURIComponent('https://www.sparklingwillowphotography.co.uk/');
-                    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`;
-                    window.open(facebookShareUrl, '_blank');
-                }} >
-                <ShareIcon className='icon' />
-            </div>
-
-
+            <ShareButton />
 
             <div className='content'>
                 <div className="image-grid">

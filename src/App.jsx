@@ -9,6 +9,8 @@ import './assets/styles/Footer.css'
 import './assets/styles/Navigations.css'
 import './assets/styles/Sliders.css'
 import './assets/styles/Banner.css'
+import './assets/styles/ScrollUp.css'
+import './assets/styles/ShareButton.css'
 
 import './assets/styles/Counters.css'
 import './assets/styles/PhotographyPackeges.css'

@@ -1,0 +1,26 @@
+.share-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #0073e6;
+    color: white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.share-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+.share-button .icon {
+    font-size: 1.5rem;
+}

@@ -251,7 +251,7 @@ export default function PrivacyPolicy() {
                         >contact form</NavLink> or
 
                         telephone <a href="tel:+447703676264">
-                            07703676264
+                            +44 7703 676264
                         </a>.
                     </p>
                 </section>

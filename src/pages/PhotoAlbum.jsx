@@ -5,11 +5,14 @@ import 'react-photo-album/masonry.css';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
+import ShareButton from '../components/ShareButton';
+
 export default function PhotoAlbum({ photos, albumName }) {
     const [index, setIndex] = useState(-1);
 
     return (
         <div className="page album-page">
+            <ShareButton />
             <div className="album-header">
                 <h1>{albumName}</h1>
             </div>

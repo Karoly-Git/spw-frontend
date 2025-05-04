@@ -20,11 +20,13 @@ import {
     cakeSmashPhotos,
     engagementPhotos
 } from '../assets/utils/photos.js';
+import ScrollUp from "../components/ScrollUp.jsx";
 
 
 export default function MainContent() {
     return (
         <main>
+            <ScrollUp />
             <Routes>
                 <Route path='*' element={<PageNotFound />} />
 
