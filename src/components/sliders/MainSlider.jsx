@@ -1,13 +1,12 @@
-import React from 'react';
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import img1 from '../../img/main-slider/img1.jpg';
-import img2 from '../../img/main-slider/img2.jpg';
-import img3 from '../../img/main-slider/img3.jpg';
-import img4 from '../../img/main-slider/img4.jpg';
+import img1 from '../../assets/images/main-slider/img1.jpg';
+import img2 from '../../assets/images/main-slider/img2.jpg';
+import img3 from '../../assets/images/main-slider/img3.jpg';
+import img4 from '../../assets/images/main-slider/img4.jpg';
 
 import { FaAngleLeft as PreviousArrow } from "react-icons/fa6";
 import { FaAngleRight as NextArrow } from "react-icons/fa6";

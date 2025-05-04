@@ -3,7 +3,7 @@ import React from 'react';
 import { reviews } from '../../data/reviews';
 import { trimToWords } from '../../data/functions';
 
-export default function Reviews() {
+export default function Testimonials() {
     return (
         <div className='page reviews-page'>
             <div className='content'>

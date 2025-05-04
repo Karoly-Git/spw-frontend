@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 import { FaMobileAlt as MobileIcon } from "react-icons/fa";
 import { MdOutlineMail as EmailIcon } from "react-icons/md";
@@ -10,20 +8,20 @@ export default function Contact() {
             <div className='page-content'>
 
                 <div className='contact-box'>
-                    <div className='contact-box-content'>
+                    <address className='contact-box-content'>
                         <div className='detail'>
                             <LocationIcon className='icon' />
                             Cheam, Sutton and surrounding areas
                         </div>
                         <div className='detail'>
                             <MobileIcon className='icon' />
-                            <a href="tel:+447703676264" rel="noopener noreferrer">+44 7703 676264</a>
+                            <a href="tel:+447703676264">+44 7703 676264</a>
                         </div>
                         <div className='detail'>
                             <EmailIcon className='icon' />
-                            <a href="mailto:nicky@sparklingwillowphotography.co.uk" rel="noopener noreferrer">nicky@sparklingwillowphotography.co.uk</a>
+                            <a href="mailto:nicky@sparklingwillowphotography.co.uk">nicky@sparklingwillowphotography.co.uk</a>
                         </div>
-                    </div>
+                    </address>
                 </div>
 
                 <div className='form-box'>
@@ -31,8 +29,7 @@ export default function Contact() {
 
                     <p>
                         If you have any questions or would like to book or discuss your next photoshoot,
-                        please send me a message
-                        <i className="smile fa-regular fa-face-smile"></i>.
+                        please send me a message.
                     </p>
 
                     <form >
@@ -73,7 +70,6 @@ export default function Contact() {
                             name="message"
                             required
                         ></textarea>
-
 
                         <button className="btn_submit js-submit-btn" type="submit" name="submit">
                             Get in touch

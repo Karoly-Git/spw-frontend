@@ -41,7 +41,7 @@ const PhotographyPackages = () => {
     ];
 
     return (
-        <div className="container">
+        <div className="photography-packeges">
             <div className="package-container">
                 {packages.map((pkg, index) => (
                     <div className="package-card" key={index}>

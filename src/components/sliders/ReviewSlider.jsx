@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 
 import 'slick-carousel/slick/slick.css';
@@ -7,7 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { FaAngleLeft as PreviousArrow } from "react-icons/fa6";
 import { FaAngleRight as NextArrow } from "react-icons/fa6";
 
-import { trimToWords } from '../../data/functions';
+import { trimToWords } from '../../assets/utils/functions';
 
 export default function ReviewSlider({ reviews }) {
 

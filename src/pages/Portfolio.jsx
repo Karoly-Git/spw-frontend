@@ -28,7 +28,7 @@ import index4 from "../../img/gallery/family-index.jpg";
 import index5 from "../../img/gallery/cakesmash-index.jpg";
 import index6 from "../../img/gallery/engagement-index.jpg";
 
-export default function Gallery() {
+export default function Portfolio() {
     const [maternityIndex, setMaternityIndex] = useState(-1);
     const [newbornIndex, setNewbornIndex] = useState(-1);
     const [sitterSessionIndex, setSitterSessionIndex] = useState(-1);

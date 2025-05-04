@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import { IoIosPhotos as AlbumIcon } from "react-icons/io";
@@ -21,7 +20,10 @@ export default function CategoryBox({ category, flipped }) {
                     <div className={category.name}>
                         <NavLink
                             to={'/gallery' + category.album}
-                        > <AlbumIcon className='icon' /> </NavLink>
+                            title='Go to album'
+                        >
+                            <AlbumIcon className='icon' />
+                        </NavLink>
                     </div>
                 </div>
 

@@ -1,0 +1,36 @@
+.counters {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(120deg, #d4d4d4, #ffffff);
+    padding: 5rem 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+    margin-bottom: 6rem;
+
+    .counter-item {
+        flex: 1;
+        transition: transform 0.3s ease-in-out;
+
+        .icon {
+            font-size: 3.5rem;
+            color: #BFA16B;
+            transition: color 0.3s ease;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin: 15px 0;
+            color: #333;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #7c7c7c;
+            margin: 0;
+            font-weight: 400;
+        }
+    }
+}

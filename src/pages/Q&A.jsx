@@ -6,7 +6,7 @@ import { FaMobileAlt as MobileIcon } from "react-icons/fa";
 import { MdOutlineMail as EmailIcon } from "react-icons/md";
 import { GrFormEdit as WriteIcon } from "react-icons/gr";
 
-export default function Faq() {
+export default function QuestionsAndAnswers() {
     return (
         <div className='page faq-page document'>
             <div className='content'>

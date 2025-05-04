@@ -1,16 +1,15 @@
-import React from 'react';
-import me from '../../img/about/me.jpg';
+import nicky from '../assets/images/about/me.jpg';
 
 export default function About() {
     return (
         <div className="page about-page">
             <div className="content">
-                <div className='wrapper'>
-                    <div className="about-header">
-                        <img src={me} alt="Nicky - Sparkling Willow Photography" />
+                <section className='wrapper'>
+                    <section className="about-header">
+                        <img src={nicky} alt="Portrait of Nicky, photographer" />
                         <h1>Hi, I'm <strong>Nicky</strong></h1>
-                    </div>
-                    <div className="about-details">
+                    </section>
+                    <section className="about-details">
                         <p>
                             I'm a proud mum of three beautiful girls! After my first two daughters were born,
                             I decided to turn my passion for photography into a career. Thus, <strong>Sparkling Willow Photography</strong> was born!
@@ -37,8 +36,8 @@ export default function About() {
                             I look forward to working with you and capturing moments you'll treasure forever. Feel free to reach out
                             if you have any questions or would like to book a session!
                         </p>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </div>
         </div>
     );

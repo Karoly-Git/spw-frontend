@@ -1,0 +1,420 @@
+.home-page {
+  padding: 0 !important;
+}
+.home-page .content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.home-page .content h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 1rem;
+}
+.home-page .content .slogan {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
+  letter-spacing: 2px;
+}
+.home-page .content .slogan span {
+  display: inline-block;
+  width: 100%;
+  padding: 0 1rem;
+  font-family: "Dancing Script", cursive;
+  max-width: 1440px;
+}
+.home-page .content .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 1rem;
+  font-size: 1.8rem;
+  text-align: center;
+  letter-spacing: 1px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.home-page .content .info .icon {
+  margin-right: 1rem;
+  color: #BFA16B;
+}
+.home-page .content .more-margin-top {
+  margin-top: 2rem;
+}
+.home-page .content .more-margin-bottom {
+  margin-top: 2rem;
+}
+.home-page .category-container {
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 12rem 0;
+}
+.home-page .category-container .category-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  height: 30rem;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.home-page .category-container .category-box .category-photo-box {
+  position: relative;
+  left: 5%;
+  top: -8rem;
+  min-width: 60%;
+  height: 80%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.home-page .category-container .category-box .category-photo-box div {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.home-page .category-container .category-box .category-photo-box div a {
+  align-self: flex-start;
+  padding: 0 !important;
+  background-color: rgba(200, 200, 200, 0.4);
+  border-radius: 8px;
+}
+.home-page .category-container .category-box .category-photo-box div a:hover .icon {
+  transform: scale(1.2);
+}
+.home-page .category-container .category-box .category-photo-box div a .icon {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.75rem;
+  transition: transform 300ms ease;
+}
+@media (max-width: 700px) {
+  .home-page .category-container .category-box .category-photo-box {
+    left: 0;
+    top: -5rem;
+    min-width: 90%;
+    height: 70%;
+  }
+}
+.home-page .category-container .category-box .category-description-box {
+  position: relative;
+  right: 5%;
+  bottom: -8rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  line-height: 1.5;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(80, 114, 126, 0.1);
+  border-radius: 10px;
+  order: 2;
+  color: rgb(80, 114, 126);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.home-page .category-container .category-box .category-description-box h3 {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.home-page .category-container .category-box .category-description-box p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+.home-page .category-container .category-box .category-description-box .long {
+  display: unset;
+}
+@media (max-width: 1000px) {
+  .home-page .category-container .category-box .category-description-box .long {
+    display: none;
+  }
+}
+.home-page .category-container .category-box .category-description-box .short {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .home-page .category-container .category-box .category-description-box .short {
+    display: unset;
+  }
+}
+@media (max-width: 1000px) {
+  .home-page .category-container .category-box .category-description-box {
+    bottom: -5rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .category-container .category-box .category-description-box {
+    right: 0;
+    margin-left: -70%;
+    bottom: -6rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .category-container .category-box {
+    padding: 0.5rem;
+  }
+}
+.home-page .category-container .flipped .category-photo-box {
+  order: 2;
+  left: auto;
+  right: 5%;
+}
+@media (max-width: 700px) {
+  .home-page .category-container .flipped .category-photo-box {
+    right: 0;
+    top: -5rem;
+    min-width: 90%;
+    height: 70%;
+  }
+}
+.home-page .category-container .flipped .category-description-box {
+  order: 1;
+  right: auto;
+  left: 5%;
+  margin-left: 0;
+}
+@media (max-width: 700px) {
+  .home-page .category-container .flipped .category-description-box {
+    left: 0;
+    margin-right: -70%;
+    bottom: -6rem;
+  }
+}
+@media (max-width: 700px) {
+  .home-page .category-container {
+    margin: 4rem 0;
+  }
+}
+.home-page .maternity {
+  background-image: url("../images/home/maternity.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.home-page .newborn {
+  background-image: url("../images/home/newborn.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.home-page .sitter {
+  background-image: url("../images/home/sitter.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.home-page .family {
+  background-image: url("../images/home/family.jpg");
+  background-position: top;
+  background-size: cover;
+}
+.home-page .cake {
+  background-image: url("../images/home/cakesmash.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.home-page .engagement {
+  background-image: url("../images/home/engagement.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.about-page {
+  background: url("../images/about/bg_opac_10.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 4rem 2rem;
+}
+.about-page .content {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+}
+.about-page .content .wrapper {
+  background: url("../images/about/bg_opac_10.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-y: 165px;
+  background-size: cover;
+  width: 100%;
+  padding: 2rem;
+}
+@media (max-width: 500px) {
+  .about-page .content .wrapper {
+    padding: 2rem 0.5rem 0.5rem;
+  }
+}
+.about-page .content .about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.about-page .content .about-header img {
+  width: 250px;
+  /* Reduced width for a more proportional look */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for subtle focus */
+}
+.about-page .content .about-header h1 {
+  padding-left: 0;
+  color: #505a6b;
+}
+@media (max-width: 500px) {
+  .about-page .content .about-header {
+    margin-bottom: 2rem;
+  }
+}
+.about-page .content .about-details {
+  max-width: 750px;
+  text-align: left;
+  line-height: 1.75;
+  font-size: 1.25rem;
+}
+.about-page .content .about-details p {
+  margin-bottom: 1.5rem;
+}
+.about-page .content .about-details .cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #50627E;
+  /* Soft muted tone for a modern look */
+  color: white;
+  border-radius: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.about-page .content .about-details .cta-button:hover {
+  background-color: #3b4b61;
+  transform: translateY(-3px);
+}
+
+.contact-page {
+  background: linear-gradient(135deg, #ffffff 50%, #698e9c 50%);
+}
+.contact-page .page-content {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+}
+.contact-page .page-content .contact-box {
+  max-width: 500px;
+  width: 100%;
+  background: url("../images/contact/camera.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact-page .page-content .contact-box .contact-box-content {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-page .page-content .contact-box .contact-box-content .detail {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.contact-page .page-content .contact-box .contact-box-content .detail .icon {
+  margin-right: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+}
+.contact-page .page-content .contact-box .contact-box-content .detail a {
+  color: white;
+}
+.contact-page .page-content .contact-box .contact-box-content .detail a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 1000px) {
+  .contact-page .page-content .contact-box {
+    display: none;
+  }
+}
+.contact-page .page-content .form-box {
+  flex-direction: row;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  background: linear-gradient(135deg, #ffffff 50%, #698e9c 50%);
+}
+.contact-page .page-content .form-box h1 {
+  color: rgb(80, 114, 126);
+}
+.contact-page .page-content .form-box p {
+  margin: 2rem 0;
+}
+@media (max-width: 500px) {
+  .contact-page .page-content .form-box p {
+    margin: 1.5rem 0;
+  }
+}
+.contact-page .page-content .form-box form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-page .page-content .form-box form label {
+  margin-bottom: 0.5rem;
+}
+.contact-page .page-content .form-box form input,
+.contact-page .page-content .form-box form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.contact-page .page-content .form-box form input:focus,
+.contact-page .page-content .form-box form textarea:focus {
+  outline: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+.contact-page .page-content .form-box form textarea {
+  resize: none;
+  min-height: 5rem;
+}
+.contact-page .page-content .form-box form button {
+  color: white;
+  background-color: rgba(80, 114, 126, 0.8);
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 250ms ease-in-out;
+  align-self: center;
+}
+.contact-page .page-content .form-box form button:hover {
+  background-color: rgb(80, 114, 126);
+}
+@media (max-width: 500px) {
+  .contact-page .page-content .form-box {
+    padding: 1rem 0.5rem;
+  }
+}/*# sourceMappingURL=Pages.css.map */

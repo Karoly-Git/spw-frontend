@@ -1,15 +1,13 @@
-import React from 'react';
-
-import { reviews } from '../../data/reviews';
-import { categories } from '../../data/categories';
+import { reviews } from '../assets/utils/reviews';
+import { categories } from '../assets/utils/categories';
 
 import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 
-import MainSlider from '../sliders/MainSlider';
-import ReviewSlider from '../sliders/ReviewSlider';
-import CategoryBox from '../CategoryBox';
-import Counters from '../Counters';
-import PhotographyPackages from '../PhotographyPackages ';
+import MainSlider from '../components/sliders/MainSlider';
+import ReviewSlider from '../components/sliders/ReviewSlider';
+import CategoryBox from '../components/CategoryBox';
+import Counters from '../components/Counters';
+import PhotographyPackages from '../components/PhotographyPackages';
 
 export default function Home() {
 
@@ -20,39 +18,57 @@ export default function Home() {
             <div className='content'>
                 <MainSlider />
 
+                <section>
+                    <h2 className='slogan'>
+                        <span>Today's moments are tomorrow's memories, worth treasuring for a lifetime.</span>
+                    </h2>
 
-                <h2 className='slogan'>
-                    <span>Today's moments are tomorrow's memories, worth treasuring for a lifetime.</span>
-                </h2>
+                    <h1>Welcome to Sparkling Willow Photography!</h1>
 
-                <h1>Welcome to Sparkling Willow Photography!</h1>
+                    <p className='info'>
+                        Maternity, Newborn and Family photographer based in South London
+                    </p>
 
-                <p className='info'>Maternity, newborn and family photographer based in South London</p>
-                <p className='info'><LocationIcon className='icon' />Cheam, Sutton and surrounding areas</p>
+                    <p className='info'>
+                        <LocationIcon className='icon' />Cheam, Sutton and surrounding areas
+                    </p>
 
-                <p className='info'>
-                    If you are expecting a baby, congratulations! If you already have a little one, have a milestone
-                    birthday
-                    coming up, recently got engaged or would simply like to update your family pictures, then you have come
-                    to
-                    the right place!
-                    I specialise in maternity, newborn, sitter, family, cake smash and engagement shoots.
-                </p>
+                    <p className='info'>
+                        If you are expecting a baby, congratulations! If you already have a little one, have a milestone
+                        birthday
+                        coming up, recently got engaged or would simply like to update your family pictures, then you have come
+                        to
+                        the right place!
+                        I specialise in maternity, newborn, sitter, family, cake smash and engagement shoots.
+                    </p>
+                </section>
 
-                <CategoryBox category={categories.maternity} flipped />
-                <CategoryBox category={categories.newborn} />
+                <section>
+                    <CategoryBox category={categories.maternity} flipped />
+                    <CategoryBox category={categories.newborn} />
+                </section>
 
-                <ReviewSlider reviews={threeReviews} />
+                <section>
+                    <ReviewSlider reviews={threeReviews} />
+                </section>
 
-                <CategoryBox category={categories.sitterSession} />
-                <CategoryBox category={categories.family} flipped />
+                <section>
+                    <CategoryBox category={categories.sitterSession} />
+                    <CategoryBox category={categories.family} flipped />
+                </section>
 
-                <PhotographyPackages />
+                <section>
+                    <PhotographyPackages />
+                </section>
 
-                <CategoryBox category={categories.cakeSmash} flipped />
-                <CategoryBox category={categories.engagement} />
+                <section>
+                    <CategoryBox category={categories.cakeSmash} flipped />
+                    <CategoryBox category={categories.engagement} />
+                </section>
 
-                <Counters />
+                <section>
+                    <Counters />
+                </section>
             </div>
         </div>
     )
