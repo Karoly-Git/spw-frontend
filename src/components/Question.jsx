@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { faq } from '../data/faq';
+import { faq } from '../assets/utils/faq';
 
 import { IoIosArrowDown as PlusIcon } from "react-icons/io";
 import { IoIosArrowUp as MinusIcon } from "react-icons/io";

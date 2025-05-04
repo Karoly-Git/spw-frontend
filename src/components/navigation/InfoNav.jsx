@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function InfoNav({ closeMobileMenu }) {
     const menuItems = [
-        { name: 'Q&A', to: '/questions-and-answers', isDisplayed: true },
+        { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: true },
         { name: 'Contact', to: '/contact', isDisplayed: true },
         { name: 'Policy', to: '/privacy-policy', isDisplayed: true }
     ];

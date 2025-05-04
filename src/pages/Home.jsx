@@ -1,4 +1,4 @@
-import { reviews } from '../assets/utils/reviews';
+import { testimonials } from '../assets/utils/testimonials';
 import { categories } from '../assets/utils/categories';
 
 import { FaLocationDot as LocationIcon } from "react-icons/fa6";
@@ -11,7 +11,7 @@ import PhotographyPackages from '../components/PhotographyPackages';
 
 export default function Home() {
 
-    const threeReviews = reviews.slice(0, 3);
+    const threeReviews = testimonials.slice(0, 3);
 
     return (
         <div className='page home-page'>

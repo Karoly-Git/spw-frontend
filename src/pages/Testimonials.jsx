@@ -1,19 +1,17 @@
-import React from 'react';
-
-import { reviews } from '../../data/reviews';
-import { trimToWords } from '../../data/functions';
+import { testimonials } from '../assets/utils/testimonials';
+import { trimToWords } from '../assets/utils/functions';
 
 export default function Testimonials() {
     return (
-        <div className='page reviews-page'>
+        <div className='page testimonials-page'>
             <div className='content'>
 
                 <h1>What My Clients Say</h1>
 
-                <div className='review-grid'>
+                <div className='grid'>
                     {
-                        reviews.map((review, index) => (
-                            <div key={'review' + index} class="review-card">
+                        testimonials.map((review, index) => (
+                            <div key={'review' + index} className="card">
                                 <blockquote>{trimToWords(review.quote, 20)}</blockquote>
                                 <h3>{review.name}</h3>
                             </div>

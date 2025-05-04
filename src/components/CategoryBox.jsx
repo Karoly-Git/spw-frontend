@@ -19,7 +19,7 @@ export default function CategoryBox({ category, flipped }) {
                 <div className='category-photo-box'>
                     <div className={category.name}>
                         <NavLink
-                            to={'/gallery' + category.album}
+                            to={'/portfolio' + category.album}
                             title='Go to album'
                         >
                             <AlbumIcon className='icon' />

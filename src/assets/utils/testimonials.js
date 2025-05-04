@@ -1,4 +1,4 @@
-export const reviews = [
+export const testimonials = [
     {
         isActive: true,
         name: "Pamela",

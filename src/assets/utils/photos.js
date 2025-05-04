@@ -1,39 +1,39 @@
-import maternity1 from '../img/gallery/maternity/maternity-1.jpg';
-import maternity2 from '../img/gallery/maternity/maternity-2.jpg';
-import maternity3 from '../img/gallery/maternity/maternity-3.jpg';
-import maternity4 from '../img/gallery/maternity/maternity-4.jpg';
-import maternity5 from '../img/gallery/maternity/maternity-5.jpg';
-import maternity6 from '../img/gallery/maternity/maternity-6.jpg';
-import maternity7 from '../img/gallery/maternity/maternity-7.jpg';
-import maternity8 from '../img/gallery/maternity/maternity-8.jpg';
-import maternity9 from '../img/gallery/maternity/maternity-9.jpg';
-import maternity10 from '../img/gallery/maternity/maternity-10.jpg';
-import maternity11 from '../img/gallery/maternity/maternity-11.jpg';
-import maternity12 from '../img/gallery/maternity/maternity-12.jpg';
-import maternity13 from '../img/gallery/maternity/maternity-13.jpg';
-import maternity14 from '../img/gallery/maternity/maternity-14.jpg';
-import maternity15 from '../img/gallery/maternity/maternity-15.jpg';
-import maternity16 from '../img/gallery/maternity/maternity-16.jpg';
+import maternity1 from '../images/portfolio/maternity/maternity-1.jpg';
+import maternity2 from '../images/portfolio/maternity/maternity-2.jpg';
+import maternity3 from '../images/portfolio/maternity/maternity-3.jpg';
+import maternity4 from '../images/portfolio/maternity/maternity-4.jpg';
+import maternity5 from '../images/portfolio/maternity/maternity-5.jpg';
+import maternity6 from '../images/portfolio/maternity/maternity-6.jpg';
+import maternity7 from '../images/portfolio/maternity/maternity-7.jpg';
+import maternity8 from '../images/portfolio/maternity/maternity-8.jpg';
+import maternity9 from '../images/portfolio/maternity/maternity-9.jpg';
+import maternity10 from '../images/portfolio/maternity/maternity-10.jpg';
+import maternity11 from '../images/portfolio/maternity/maternity-11.jpg';
+import maternity12 from '../images/portfolio/maternity/maternity-12.jpg';
+import maternity13 from '../images/portfolio/maternity/maternity-13.jpg';
+import maternity14 from '../images/portfolio/maternity/maternity-14.jpg';
+import maternity15 from '../images/portfolio/maternity/maternity-15.jpg';
+import maternity16 from '../images/portfolio/maternity/maternity-16.jpg';
 
-import newborn1 from '../img/gallery/newborn/newborn-1.jpg';
-import newborn2 from '../img/gallery/newborn/newborn-2.jpg';
-import newborn3 from '../img/gallery/newborn/newborn-3.jpg';
+import newborn1 from '../images/portfolio/newborn/newborn-1.jpg';
+import newborn2 from '../images/portfolio/newborn/newborn-2.jpg';
+import newborn3 from '../images/portfolio/newborn/newborn-3.jpg';
 
-import sittersession1 from '../img/gallery/sittersession/sittersession1.jpg';
-import sittersession2 from '../img/gallery/sittersession/sittersession2.jpg';
-import sittersession3 from '../img/gallery/sittersession/sittersession3.jpg';
+import sittersession1 from '../images/portfolio/sittersession/sittersession1.jpg';
+import sittersession2 from '../images/portfolio/sittersession/sittersession2.jpg';
+import sittersession3 from '../images/portfolio/sittersession/sittersession3.jpg';
 
-import family1 from '../img/gallery/family/family-1.jpg';
-import family2 from '../img/gallery/family/family-2.jpg';
-import family3 from '../img/gallery/family/family-3.jpg';
+import family1 from '../images/portfolio/family/family-1.jpg';
+import family2 from '../images/portfolio/family/family-2.jpg';
+import family3 from '../images/portfolio/family/family-3.jpg';
 
-import cake1 from '../img/gallery/cakesmash/cake-smash-1.jpg';
-import cake2 from '../img/gallery/cakesmash/cake-smash-2.jpg';
-import cake3 from '../img/gallery/cakesmash/cake-smash-3.jpg';
+import cake1 from '../images/portfolio/cakesmash/cake-smash-1.jpg';
+import cake2 from '../images/portfolio/cakesmash/cake-smash-2.jpg';
+import cake3 from '../images/portfolio/cakesmash/cake-smash-3.jpg';
 
-import engagement1 from '../img/gallery/engagement/engagement1.jpg';
-import engagement2 from '../img/gallery/engagement/engagement2.jpg';
-import engagement3 from '../img/gallery/engagement/engagement3.jpg';
+import engagement1 from '../images/portfolio/engagement/engagement1.jpg';
+import engagement2 from '../images/portfolio/engagement/engagement2.jpg';
+import engagement3 from '../images/portfolio/engagement/engagement3.jpg';
 
 export const maternityPhotos = [
     {

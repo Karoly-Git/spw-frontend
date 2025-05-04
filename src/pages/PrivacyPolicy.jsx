@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function PrivacyPolicy() {
     return (
-        <div className='page privacy-policy-page document'>
+        <div className='page privacy-policy-page'>
             <div className='content'>
                 <h1>Privacy Policy</h1>
 
@@ -250,7 +250,7 @@ export default function PrivacyPolicy() {
                             to={"/contact"}
                         >contact form</NavLink> or
 
-                        telephone <a href="tel:+447703676264" rel="noopener noreferrer">
+                        telephone <a href="tel:+447703676264">
                             07703676264
                         </a>.
                     </p>

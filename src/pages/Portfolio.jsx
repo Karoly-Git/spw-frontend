@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import { useState } from "react";
 import "react-photo-album/masonry.css";
 
 import Lightbox from "yet-another-react-lightbox";
@@ -14,19 +13,21 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 
 import { CiShare2 as ShareIcon } from "react-icons/ci";
 
-import { maternityPhotos } from '../../data/photos.js';
-import { newbornPhotos } from '../../data/photos.js';
-import { sitterSessionPhotos } from '../../data/photos.js';
-import { familyPhotos } from '../../data/photos.js';
-import { cakeSmashPhotos } from '../../data/photos.js';
-import { engagementPhotos } from '../../data/photos.js';
+import {
+    maternityPhotos,
+    newbornPhotos,
+    sitterSessionPhotos,
+    familyPhotos,
+    cakeSmashPhotos,
+    engagementPhotos
+} from '../assets/utils/photos.js';
 
-import index1 from "../../img/gallery/maternity-index.jpg";
-import index2 from "../../img/gallery/newborn-index.jpg";
-import index3 from "../../img/gallery/sitter-index.jpg";
-import index4 from "../../img/gallery/family-index.jpg";
-import index5 from "../../img/gallery/cakesmash-index.jpg";
-import index6 from "../../img/gallery/engagement-index.jpg";
+import index1 from "../assets/images/portfolio/maternity-index.jpg";
+import index2 from "../assets/images/portfolio/newborn-index.jpg";
+import index3 from "../assets/images/portfolio/sitter-index.jpg";
+import index4 from "../assets/images/portfolio/family-index.jpg";
+import index5 from "../assets/images/portfolio/cakesmash-index.jpg";
+import index6 from "../assets/images/portfolio/engagement-index.jpg";
 
 export default function Portfolio() {
     const [maternityIndex, setMaternityIndex] = useState(-1);
@@ -71,7 +72,7 @@ export default function Portfolio() {
 
 
     return (
-        <div className='page gallery-page'>
+        <div className='page portfolio-page'>
 
             <div className='share-button'
                 onClick={() => {
@@ -89,7 +90,7 @@ export default function Portfolio() {
                     {indexImages.map((image, index) => (
                         <div className="image-item" key={index} onClick={() => image.setIndex(0)}>
                             <img src={image.src} alt={image.alt} loading="lazy" />
-                            <div className="gallery-name">{image.alt}</div>
+                            <div className="portfolio-name">{image.alt}</div>
                         </div>
                     ))}
                 </div>

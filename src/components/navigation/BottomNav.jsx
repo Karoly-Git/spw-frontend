@@ -6,7 +6,7 @@ export default function BottomNav() {
         { name: 'About', to: '/about', isDisplayed: true },
         { name: 'Portfolio', to: '/portfolio', isDisplayed: true },
         { name: 'Testimonials', to: '/testimonials', isDisplayed: true },
-        { name: 'Q&A', to: '/questions-and-answers', isDisplayed: true },
+        { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: true },
         { name: 'Awards', to: '/awards', isDisplayed: true },
         { name: 'Contact', to: '/contact', isDisplayed: true }
     ];
