@@ -1,4 +1,4 @@
-import React from "react";
+import { NavLink } from "react-router-dom";
 
 const PhotographyPackages = () => {
     const packages = [
@@ -6,37 +6,37 @@ const PhotographyPackages = () => {
             title: "Maternity Photoshoot",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Celebrate the beauty and anticipation of motherhood with a relaxed session in the studio or outdoors. We'll capture your glow and the love growing within."
         },
         {
-            title: "Newborn Baby Photography",
+            title: "Newborn Photography",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Preserve the fleeting moments of your baby’s earliest days with a calm, gentle shoot designed to capture their tiny details and first expressions."
         },
         {
             title: "Sitter Session",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Perfect for babies sitting unaided, these joyful sessions highlight blossoming personalities, curious expressions, and those adorable baby grins."
         },
         {
             title: "Family Photography",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Enjoy a fun and natural session with your loved ones, designed to capture the warmth, laughter, and love that make your family unique."
         },
         {
             title: "Cake Smash Photoshoot",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Celebrate your little one’s birthday with a fun-filled cake smash session full of giggles, frosting, and candid memories to cherish."
         },
         {
             title: "Engagement Photoshoot",
             price: "£100",
             description:
-                "This session is the one for you even if you have never booked anything like this before, or you're not sure you're even a “family photo shoot” family. We guarantee a fantastic day with memories to treasure forever.",
+                "Capture your love story at the start of something beautiful. Whether you're announcing your engagement or just celebrating it, this shoot is all about you."
         },
     ];
 
@@ -46,9 +46,8 @@ const PhotographyPackages = () => {
                 {packages.map((pkg, index) => (
                     <div className="package-card" key={index}>
                         <h4>{pkg.title}</h4>
-                        <p className="price">FROM {pkg.price}</p>
+                        {false && <p className="price">FROM {pkg.price}</p>}
                         <p className="description">{pkg.description}</p>
-                        <button>Book Now</button>
                     </div>
                 ))}
             </div>

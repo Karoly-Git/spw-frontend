@@ -54,6 +54,8 @@
 .photography-packeges .package-card .description {
   margin-top: auto;
   margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 .photography-packeges .package-card button {
   align-self: center;

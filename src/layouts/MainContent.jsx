@@ -10,6 +10,7 @@ import Portfolio from "../pages/Portfolio";
 import PrivacyPolicy from "../pages/PrivacyPolicy";
 import PhotoAlbum from "../pages/PhotoAlbum";
 import PageNotFound from "../pages/PageNotFound";
+import Booking from "../pages/Booking";
 
 import {
     maternityPhotos,
@@ -34,6 +35,7 @@ export default function MainContent() {
                 <Route path='/frequently-asked-questions' element={<Faq />} />
                 <Route path='/testimonials' element={<Testimonials />} />
                 <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/booking' element={<Booking />} />
 
                 <Route path='/privacy-policy' element={<PrivacyPolicy />} />
 
