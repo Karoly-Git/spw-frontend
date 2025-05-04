@@ -1,4 +1,7 @@
 .photography-packeges {
+  background: url("../images/home/paralax3.jpg") no-repeat top right;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: #f7f7f7;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   justify-content: center;

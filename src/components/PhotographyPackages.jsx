@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import BookButton from "./BookButton";
 
 const PhotographyPackages = () => {
     const packages = [
@@ -42,6 +42,9 @@ const PhotographyPackages = () => {
 
     return (
         <div className="photography-packeges">
+
+            <BookButton />
+
             <div className="package-container">
                 {packages.map((pkg, index) => (
                     <div className="package-card" key={index}>

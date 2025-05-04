@@ -64,7 +64,7 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <Banner content={priceBannerText} />
+                    <Banner content={priceBannerText} bannerId="price-banner" />
                     <PhotographyPackages />
                 </section>
 

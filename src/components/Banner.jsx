@@ -1,6 +1,6 @@
-export default function Banner({ content }) {
+export default function Banner({ content, bannerId }) {
     return (
-        <div className='banner'>
+        <div id={bannerId} className='banner'>
             {content}
         </div>
     )
