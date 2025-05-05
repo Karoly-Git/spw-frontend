@@ -1,6 +1,6 @@
-import InfoNav from "../components/navigation/InfoNav";
-import BottomNav from "../components/navigation/BottomNav";
-import SocialNav from "../components/navigation/SocialNav";
+import InfoNav from "../components/navigations/InfoNav";
+import BottomNav from "../components/navigations/BottomNav";
+import SocialNav from "../components/navigations/SocialNav";
 
 export default function Footer() {
     const locations = [

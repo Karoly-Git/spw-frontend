@@ -5,7 +5,7 @@ import 'react-photo-album/masonry.css';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
-import ShareButton from '../components/ShareButton';
+import ShareButton from '../components/buttons/ShareButton';
 
 export default function PhotoAlbum({ photos, albumName }) {
     const [index, setIndex] = useState(-1);

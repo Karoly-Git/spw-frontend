@@ -1,4 +1,4 @@
-import BookButton from "./BookButton";
+import BookButton from "./buttons/BookButton";
 
 const PhotographyPackages = () => {
     const packages = [

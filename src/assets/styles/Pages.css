@@ -445,19 +445,6 @@
   resize: none;
   min-height: 5rem;
 }
-.contact-page .page-content .form-box form button {
-  color: white;
-  background-color: rgba(80, 114, 126, 0.8);
-  padding: 0.5rem 1rem;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: all 250ms ease-in-out;
-  align-self: center;
-}
-.contact-page .page-content .form-box form button:hover {
-  background-color: rgb(80, 114, 126);
-}
 @media (max-width: 500px) {
   .contact-page .page-content .form-box {
     padding: 1rem 0.5rem;

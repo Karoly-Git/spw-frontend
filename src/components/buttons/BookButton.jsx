@@ -36,12 +36,8 @@ export default function BookButton() {
     return (
         <NavLink to="/booking" title='Book a Session'>
             <div
-                className='scroll-up'
-                style={{
-                    left: isScrollBtnVisible ? '1rem' : '-3rem',
-                    background: 'red',
-                    bottom: "1rem"
-                }}
+                className='screen-side-btn book-btn'
+                style={{ left: isScrollBtnVisible ? '1rem' : '-3rem' }}
             >
                 <CalenderIcon className='icon' />
             </div>

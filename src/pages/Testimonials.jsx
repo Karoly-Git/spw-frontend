@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { testimonials } from '../assets/utils/testimonials';
 import { trimToWords } from '../assets/utils/functions';
 
+import ActionButton from '../components/buttons/ActionButton';
+
 export default function Testimonials() {
     const [visibleCount, setVisibleCount] = useState(4);
 
-    const loadMore = () => {
+    const showMore = () => {
         setVisibleCount((prevCount) => Math.min(prevCount + 4, testimonials.length));
     };
 
@@ -25,9 +27,15 @@ export default function Testimonials() {
                 </div>
 
                 {visibleCount < testimonials.length && (
-                    <button className="load-more-btn" onClick={loadMore}>Show More</button>
-                )}
+                    <ActionButton
+                        className="action-btn btn_submit js-submit-btn"
+                        type=""
+                        name=""
+                        text="Show More"
+                        onClick={showMore}
+                    />
 
+                )}
             </div>
         </div>
     );

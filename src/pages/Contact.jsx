@@ -2,6 +2,8 @@ import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 import { FaMobileAlt as MobileIcon } from "react-icons/fa";
 import { MdOutlineMail as EmailIcon } from "react-icons/md";
 
+import ActionButton from "../components/buttons/ActionButton";
+
 export default function Contact() {
     return (
         <div className='page contact-page'>
@@ -71,9 +73,12 @@ export default function Contact() {
                             required
                         ></textarea>
 
-                        <button className="btn_submit js-submit-btn" type="submit" name="submit">
-                            Get in touch
-                        </button>
+                        <ActionButton
+                            className="action-btn btn_submit js-submit-btn"
+                            type="submit"
+                            name="submit"
+                            text="Get in touch"
+                        />
                     </form>
                 </div>
             </div>

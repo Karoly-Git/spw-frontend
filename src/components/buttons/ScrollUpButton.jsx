@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaArrowUp as ArrowIcon } from "react-icons/fa";
 
-export default function ScrollUp() {
+export default function ScrollUpButton() {
     const showUpAt = 500;
     const [isScrollBtnVisible, setIsScrollBtnVisible] = useState(false);
 
@@ -24,9 +24,9 @@ export default function ScrollUp() {
 
     return (
         <div
-            className='scroll-up'
+            className='screen-side-btn scroll-up-btn'
             onClick={scrollToTop}
-            style={isScrollBtnVisible ? { right: '0.5rem' } : { right: '-3rem' }}
+            style={{ right: isScrollBtnVisible ? '0.5rem' : '-3rem' }}
         >
             <ArrowIcon className='icon' />
         </div>

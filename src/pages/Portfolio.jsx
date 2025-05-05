@@ -27,7 +27,7 @@ import index4 from "../assets/images/portfolio/family-index.jpg";
 import index5 from "../assets/images/portfolio/cakesmash-index.jpg";
 import index6 from "../assets/images/portfolio/engagement-index.jpg";
 
-import ShareButton from "../components/ShareButton.jsx";
+import ShareButton from "../components/buttons/ShareButton.jsx";
 
 export default function Portfolio() {
     const [maternityIndex, setMaternityIndex] = useState(-1);
