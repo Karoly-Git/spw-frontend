@@ -279,7 +279,6 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 4rem 2rem;
 }
 .about-page .content {
   max-width: 850px;
@@ -323,6 +322,7 @@
 .about-page .content .about-header h1 {
   padding-left: 0;
   color: #505a6b;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   .about-page .content .about-header {
@@ -484,42 +484,48 @@
 .faq-page .content .question-container h1 {
   color: #4A90E2;
   text-align: center;
+  margin-bottom: 1rem;
 }
-.faq-page .content .question-container h2 {
+.faq-page .content .question-container .questions h2 {
   font-weight: bold;
-  background-color: red;
+  margin-bottom: 0.5rem;
+  color: rgb(80, 114, 126);
 }
-.faq-page .content .question-container section {
+.faq-page .content .question-container .questions section {
   padding-bottom: 0.5rem;
   margin-bottom: 1rem;
 }
-.faq-page .content .question-container section:last-child {
+.faq-page .content .question-container .questions section:last-child {
   border-bottom: none;
 }
-.faq-page .content .question-container section .question-wrap {
+.faq-page .content .question-container .questions section .question-wrap {
   overflow: hidden;
 }
-.faq-page .content .question-container section .question-wrap h3 {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.faq-page .content .question-container .questions section .question-wrap h3 {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   z-index: 100;
   background-color: white;
-  font-weight: bold;
+  padding-left: 0.25rem;
+  cursor: pointer;
 }
-.faq-page .content .question-container section .question-wrap h3 .icon {
+.faq-page .content .question-container .questions section .question-wrap h3 .icon {
   width: 1rem;
   min-width: 1rem;
 }
-.faq-page .content .question-container section .question-wrap h3:hover {
+.faq-page .content .question-container .questions section .question-wrap h3:hover {
   color: #4A90E2;
 }
-.faq-page .content .question-container section .question-wrap .active-h3 {
+.faq-page .content .question-container .questions section .question-wrap .active-h3 {
   color: #4A90E2;
 }
-.faq-page .content .question-container section .question-wrap p {
+.faq-page .content .question-container .questions section .question-wrap .answer {
   position: relative;
   transition: all 250ms ease-in-out;
   margin-bottom: 0;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
 @media (max-width: 500px) {
   .faq-page .content .question-container {

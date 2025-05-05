@@ -1,8 +1,16 @@
 import nicky from '../assets/images/about/me.jpg';
+import Banner from '../components/Banner';
 
 export default function About() {
     return (
         <div className="page about-page">
+            <section>
+                <Banner
+                    content="Award-winning, family-friendly photography — creating timeless images you'll treasure forever."
+                    bannerId="why-me-banner"
+                />
+            </section>
+
             <div className="content">
                 <section className='wrapper'>
                     <section className="about-header">

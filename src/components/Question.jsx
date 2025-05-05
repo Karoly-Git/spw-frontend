@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 import { faq } from '../assets/utils/faq';
 
@@ -6,6 +6,7 @@ import { IoIosArrowDown as PlusIcon } from "react-icons/io";
 import { IoIosArrowUp as MinusIcon } from "react-icons/io";
 
 export default function Question() {
+    const [isReady, setIsReady] = useState(false);
 
     const [activeIndex, setActiveIndex] = useState(null);
     const [refHeights, setRefHeights] = useState([]);
@@ -32,6 +33,9 @@ export default function Question() {
     }
 
     useEffect(() => {
+        setTimeout(() => {
+            setIsReady(true)
+        }, 500);
         // Initial call to set the heights
         getQuestionHeights();
 
@@ -49,8 +53,9 @@ export default function Question() {
         };
     }, []);
 
+
     return (
-        <>
+        <div className='questions' style={{ visibility: isReady ? "visible" : "hidden" }}>
             {faq.map((queston, index) => (
                 <div key={queston.h3 + index}>
                     {queston.h2 && <h2 className='question-category'>{queston.h2}</h2>}
@@ -70,6 +75,6 @@ export default function Question() {
                         </section>}
                 </div>
             ))}
-        </>
+        </div>
     )
 }

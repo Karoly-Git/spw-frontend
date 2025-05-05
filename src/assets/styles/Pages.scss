@@ -314,7 +314,7 @@
     background-size: cover;
     background-attachment: fixed;
 
-    padding: 4rem 2rem;
+    //padding: 4rem 2rem;
 
     .content {
         max-width: 850px;
@@ -361,7 +361,7 @@
             h1 {
                 padding-left: 0;
                 color: #505a6b;
-
+                font-size: 2rem;
             }
 
             @media(max-width: 500px) {
@@ -542,51 +542,59 @@
             h1 {
                 color: #4A90E2;
                 text-align: center;
-            }
-
-            h2 {
-                font-weight: bold;
-                background-color: red;
-            }
-
-            section {
-                padding-bottom: 0.5rem;
                 margin-bottom: 1rem;
+            }
 
-                &:last-child {
-                    border-bottom: none;
+            .questions {
+                h2 {
+                    font-weight: bold;
+                    margin-bottom: 0.5rem;
+                    color: rgb(80, 114, 126);
                 }
 
-                .question-wrap {
-                    overflow: hidden;
+                section {
+                    padding-bottom: 0.5rem;
+                    margin-bottom: 1rem;
 
-                    h3 {
-                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                        position: relative;
-                        z-index: 100;
-                        background-color: white;
-                        font-weight: bold;
+                    &:last-child {
+                        border-bottom: none;
+                    }
 
-                        .icon {
-                            width: 1rem;
-                            min-width: 1rem;
+                    .question-wrap {
+                        overflow: hidden;
+
+                        h3 {
+                            display: flex;
+                            justify-content: space-between;
+                            position: relative;
+                            z-index: 100;
+                            background-color: white;
+                            padding-left: 0.25rem;
+                            cursor: pointer;
+
+                            .icon {
+                                width: 1rem;
+                                min-width: 1rem;
+                            }
+
+                            &:hover {
+                                color: #4A90E2;
+                            }
                         }
 
-                        &:hover {
+                        .active-h3 {
                             color: #4A90E2;
                         }
-                    }
 
-                    .active-h3 {
-                        color: #4A90E2;
-                    }
+                        .answer {
+                            position: relative;
+                            transition: all 250ms ease-in-out;
+                            margin-bottom: 0;
+                            padding-left: 1rem;
+                            padding-top: 0.5rem;
+                        }
 
-                    p {
-                        position: relative;
-                        transition: all 250ms ease-in-out;
-                        margin-bottom: 0;
                     }
-
                 }
             }
 

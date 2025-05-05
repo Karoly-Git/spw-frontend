@@ -11,13 +11,7 @@ import PhotographyPackages from '../components/PhotographyPackages';
 import Banner from '../components/Banner';
 
 export default function Home() {
-
     const threeReviews = testimonials.slice(0, 3);
-
-    const priceBannerText =
-        <>
-            Photoshoots starting from just £100 - capture moments that last a lifetime!
-        </>;
 
     return (
         <div className='page home-page'>
@@ -64,7 +58,11 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <Banner content={priceBannerText} bannerId="price-banner" />
+                    <Banner
+                        content="Photoshoots starting from just £100 - capture moments that last a lifetime!"
+                        bannerId="price-banner"
+                    />
+
                     <PhotographyPackages />
                 </section>
 

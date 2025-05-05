@@ -7,7 +7,7 @@ import { GrFormEdit as WriteIcon } from "react-icons/gr";
 
 export default function Faq() {
     return (
-        <div className='page faq-page document'>
+        <div className='page faq-page'>
             <div className='content'>
                 <div className='media-container'>
                 </div>
@@ -16,7 +16,6 @@ export default function Faq() {
                     <h1>Frequently Asked Questions</h1>
                     <Question />
                 </div>
-
             </div>
 
             <div className='contact-help-box'>
