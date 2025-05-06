@@ -1,3 +1,4 @@
+import ScrollToTopOnNavigation from './components/ScrollToTopOnNavigation';
 import Header from './layouts/Header';
 import MainContent from './layouts/MainContent';
 import Footer from './layouts/Footer'
@@ -19,6 +20,7 @@ import './assets/styles/Pages.css'
 export default function App() {
   return (
     <div className='App'>
+      <ScrollToTopOnNavigation />
       <Header />
       <MainContent />
       <Footer />

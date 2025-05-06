@@ -1,14 +1,34 @@
+import { useState } from "react";
 import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 import { FaMobileAlt as MobileIcon } from "react-icons/fa";
 import { MdOutlineMail as EmailIcon } from "react-icons/md";
+import ReCAPTCHA from "react-google-recaptcha";
 
-import ActionButton from "../components/buttons/ActionButton";
+import ActionButton from "../components/buttons/ActionButton"; // ✅ Don't forget this!
 
 export default function Contact() {
+    const [captchaToken, setCaptchaToken] = useState(null);
+    const siteKey = "YOUR_RECAPTCHA_SITE_KEY_HERE"; // Replace with your real reCAPTCHA key
+
+    const handleCaptchaChange = (token) => {
+        setCaptchaToken(token);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!captchaToken) {
+            alert("Please verify that you are not a robot.");
+            return;
+        }
+
+        // TODO: Send form data along with captchaToken to backend/email service
+        console.log("Form submitted with token:", captchaToken);
+    };
+
     return (
         <div className='page contact-page'>
             <div className='page-content'>
-
                 <div className='contact-box'>
                     <address className='contact-box-content'>
                         <div className='detail'>
@@ -21,20 +41,21 @@ export default function Contact() {
                         </div>
                         <div className='detail'>
                             <EmailIcon className='icon' />
-                            <a href="mailto:nicky@sparklingwillowphotography.co.uk">nicky@sparklingwillowphotography.co.uk</a>
+                            <a href="mailto:nicky@sparklingwillowphotography.co.uk">
+                                nicky@sparklingwillowphotography.co.uk
+                            </a>
                         </div>
                     </address>
                 </div>
 
                 <div className='form-box'>
                     <h1>Contact Me</h1>
-
                     <p>
                         If you have any questions or would like to book or discuss your next photoshoot,
                         please send me a message.
                     </p>
 
-                    <form >
+                    <form onSubmit={handleSubmit}>
                         <label htmlFor="name">Name *</label>
                         <input
                             className="input must-be-given"
@@ -73,6 +94,12 @@ export default function Contact() {
                             required
                         ></textarea>
 
+                        <ReCAPTCHA
+                            sitekey={siteKey}
+                            onChange={handleCaptchaChange}
+                            className="recaptcha"
+                        />
+
                         <ActionButton
                             className="action-btn btn_submit js-submit-btn"
                             type="submit"
@@ -83,5 +110,5 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-    )
+    );
 }

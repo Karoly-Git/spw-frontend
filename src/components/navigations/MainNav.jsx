@@ -6,7 +6,8 @@ export default function MainNav() {
         { name: 'About', to: '/about', isDisplayed: true },
         { name: 'Portfolio', to: '/portfolio', isDisplayed: true },
         { name: 'Testimonials', to: '/testimonials', isDisplayed: true },
-        { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: true },
+        { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: false },
+        { name: 'Booking', to: '/booking', isDisplayed: true },
         { name: 'Awards', to: '/awards', isDisplayed: true },
         { name: 'Contact', to: '/contact', isDisplayed: true }
     ];
