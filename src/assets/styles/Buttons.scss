@@ -38,14 +38,14 @@
 
     }
 
-    &.book-btn {
-        background-color: red;
-        transform: scale(1.5);
-
-        &:hover {
-            background-color: darkred;
-        }
-    }
+    // &.book-btn {
+    //     background-color: red;
+    //     transform: scale(1.5);
+    // 
+    //     &:hover {
+    //         background-color: darkred;
+    //     }
+    // }
 }
 
 .action-btn {
@@ -60,5 +60,19 @@
 
     &:hover {
         background-color: rgba(80, 114, 126, 1);
+    }
+
+    &.book-btn {
+        display: flex;
+        justify-self: center;
+        gap: 0.5rem;
+        transform: scale(1.25);
+        margin-top: 3rem;
+        background-color: rgb(225, 7, 7);
+        font-weight: bold;
+
+        &:hover {
+            background-color: rgb(180, 7, 7);
+        }
     }
 }

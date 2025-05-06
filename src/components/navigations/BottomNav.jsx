@@ -2,8 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 export default function BottomNav() {
     const menuItems = [
-        { name: 'Home', to: '/', isDisplayed: true },
-        { name: 'About', to: '/about', isDisplayed: true },
+        { name: 'Home', to: '/', isDisplayed: false },
+        { name: 'About', to: '/about', isDisplayed: false },
         { name: 'Portfolio', to: '/portfolio', isDisplayed: true },
         { name: 'Testimonials', to: '/testimonials', isDisplayed: true },
         { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: false },

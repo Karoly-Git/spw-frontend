@@ -29,4 +29,20 @@
   color: #7c7c7c;
   margin: 0;
   font-weight: 400;
-}/*# sourceMappingURL=Counters.css.map */
+}
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.rotate-y {
+  animation: spinY 1s linear infinite;
+}/*# sourceMappingURL=HighlightMetrics.css.map */

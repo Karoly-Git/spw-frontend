@@ -12,7 +12,7 @@ import './assets/styles/Sliders.css'
 import './assets/styles/Banner.css'
 import './assets/styles/Buttons.css'
 
-import './assets/styles/Counters.css'
+import './assets/styles/HighlightMetrics.css'
 import './assets/styles/PhotographyPackeges.css'
 
 import './assets/styles/Pages.css'

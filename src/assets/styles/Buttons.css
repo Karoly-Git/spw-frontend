@@ -32,13 +32,6 @@
 .screen-side-btn.share-btn:hover {
   background-color: #005bb5;
 }
-.screen-side-btn.book-btn {
-  background-color: red;
-  transform: scale(1.5);
-}
-.screen-side-btn.book-btn:hover {
-  background-color: darkred;
-}
 
 .action-btn {
   color: white;
@@ -52,4 +45,16 @@
 }
 .action-btn:hover {
   background-color: rgb(80, 114, 126);
+}
+.action-btn.book-btn {
+  display: flex;
+  justify-self: center;
+  gap: 0.5rem;
+  transform: scale(1.25);
+  margin-top: 3rem;
+  background-color: rgb(225, 7, 7);
+  font-weight: bold;
+}
+.action-btn.book-btn:hover {
+  background-color: rgb(180, 7, 7);
 }/*# sourceMappingURL=Buttons.css.map */

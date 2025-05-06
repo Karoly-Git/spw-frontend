@@ -6,9 +6,10 @@ import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 import MainSlider from '../components/sliders/MainSlider';
 import ReviewSlider from '../components/sliders/ReviewSlider';
 import CategoryBox from '../components/CategoryBox';
-import Counters from '../components/Counters';
+import HighlightMetrics from '../components/HighlightMetrics';
 import PhotographyPackages from '../components/PhotographyPackages';
 import Banner from '../components/Banner';
+import BookButton from '../components/buttons/BookButton';
 
 export default function Home() {
     const threeReviews = testimonials.slice(0, 3);
@@ -49,6 +50,7 @@ export default function Home() {
                 </section>
 
                 <section>
+                    <HighlightMetrics />
                     <ReviewSlider reviews={threeReviews} />
                 </section>
 
@@ -64,15 +66,12 @@ export default function Home() {
                     />
 
                     <PhotographyPackages />
+                    <BookButton />
                 </section>
 
                 <section>
                     <CategoryBox category={categories.cakeSmash} flipped />
                     <CategoryBox category={categories.engagement} />
-                </section>
-
-                <section>
-                    <Counters />
                 </section>
             </div>
         </div>
