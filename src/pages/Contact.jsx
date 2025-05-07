@@ -4,11 +4,11 @@ import { FaMobileAlt as MobileIcon } from "react-icons/fa";
 import { MdOutlineMail as EmailIcon } from "react-icons/md";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import ActionButton from "../components/buttons/ActionButton"; // ✅ Don't forget this!
+import ActionButton from "../components/buttons/ActionButton";
 
 export default function Contact() {
     const [captchaToken, setCaptchaToken] = useState(null);
-    const siteKey = "YOUR_RECAPTCHA_SITE_KEY_HERE"; // Replace with your real reCAPTCHA key
+    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     const handleCaptchaChange = (token) => {
         setCaptchaToken(token);

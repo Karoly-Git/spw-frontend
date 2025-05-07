@@ -15,7 +15,7 @@ const BookingForm = () => {
     const [captchaToken, setCaptchaToken] = useState(null);
     const [submitted, setSubmitted] = useState(false);
 
-    const siteKey = "YOUR_RECAPTCHA_SITE_KEY_HERE"; // Replace with your actual site key
+    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     const handleChange = (e) => {
         setFormData((prev) => ({
