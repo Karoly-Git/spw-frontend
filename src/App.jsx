@@ -11,6 +11,7 @@ import './assets/styles/Navigations.css'
 import './assets/styles/Sliders.css'
 import './assets/styles/Banner.css'
 import './assets/styles/Buttons.css'
+import './assets/styles/Modal.css'
 
 import './assets/styles/HighlightMetrics.css'
 import './assets/styles/PhotographyPackeges.css'

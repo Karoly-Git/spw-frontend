@@ -1,6 +1,5 @@
 import nicky from '../assets/images/about/me.jpg';
 import Banner from '../components/Banner';
-import BookButton from '../components/buttons/BookButton';
 
 export default function About() {
     return (
@@ -17,7 +16,6 @@ export default function About() {
                     <section className="about-header">
                         <img src={nicky} alt="Portrait of Nicky, photographer" />
                         <h1>Hi, I'm <strong>Nicky</strong></h1>
-                        <p className="subheadline">Your local maternity & family photographer based in South London</p>
                     </section>
                     <section className="about-details">
                         <p>
@@ -46,8 +44,6 @@ export default function About() {
                             I look forward to working with you and capturing moments you'll treasure forever. Feel free to reach out
                             if you have any questions or would like to book a session!
                         </p>
-
-                        <BookButton />
                     </section>
                 </section>
             </div>

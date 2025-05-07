@@ -5,7 +5,7 @@ import { FaLocationDot as LocationIcon } from "react-icons/fa6";
 
 import MainSlider from '../components/sliders/MainSlider';
 import ReviewSlider from '../components/sliders/ReviewSlider';
-import CategoryBox from '../components/CategoryBox';
+import CategoryContainer from '../components/CategoryContainer';
 import HighlightMetrics from '../components/HighlightMetrics';
 import PhotographyPackages from '../components/PhotographyPackages';
 import Banner from '../components/Banner';
@@ -45,8 +45,8 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <CategoryBox category={categories.maternity} flipped />
-                    <CategoryBox category={categories.newborn} />
+                    <CategoryContainer category={categories.maternity} flipped />
+                    <CategoryContainer category={categories.newborn} />
                 </section>
 
                 <section>
@@ -55,8 +55,8 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <CategoryBox category={categories.sitterSession} />
-                    <CategoryBox category={categories.family} flipped />
+                    <CategoryContainer category={categories.sitterSession} />
+                    <CategoryContainer category={categories.family} flipped />
                 </section>
 
                 <section>
@@ -70,8 +70,8 @@ export default function Home() {
                 </section>
 
                 <section>
-                    <CategoryBox category={categories.cakeSmash} flipped />
-                    <CategoryBox category={categories.engagement} />
+                    <CategoryContainer category={categories.cakeSmash} flipped />
+                    <CategoryContainer category={categories.engagement} />
                 </section>
             </div>
         </div>

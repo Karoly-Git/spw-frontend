@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import { IoIosPhotos as AlbumIcon } from "react-icons/io";
 
-export default function CategoryBox({ category, flipped }) {
+export default function CategoryContainer({ category, flipped }) {
     function getShortText(text, n) {
         const words = text.split(' ');
         if (words.length <= n) {
@@ -11,12 +11,12 @@ export default function CategoryBox({ category, flipped }) {
         return words.slice(0, n).join(' ') + '...';
     }
 
-
     return (
         <div className='category-container'>
             <div className={flipped ? 'category-box flipped' : 'category-box'}>
 
                 <div className='category-photo-box'>
+                    <h3 className='tagline'>{category.tagline}</h3>
                     <div className={category.name}>
                         <NavLink
                             to={'/portfolio' + category.album}

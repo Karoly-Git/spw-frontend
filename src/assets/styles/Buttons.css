@@ -49,6 +49,7 @@
 .action-btn.book-btn {
   display: flex;
   justify-self: center;
+  align-items: center;
   gap: 0.5rem;
   transform: scale(1.25);
   margin-top: 3rem;
