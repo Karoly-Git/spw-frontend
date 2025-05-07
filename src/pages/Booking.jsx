@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import ActionButton from "../components/buttons/ActionButton"; // ✅ Match Contact page
+import ActionButton from "../components/buttons/ActionButton";
 
-const BookingForm = () => {
+export default function Booking() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -163,5 +163,3 @@ const BookingForm = () => {
         </div>
     );
 };
-
-export default BookingForm;
