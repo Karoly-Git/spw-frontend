@@ -1,0 +1,22 @@
+Lazy load for images.
+
+In the albums:
+	- Add some text that personalizes the image, some info, interesting fact 
+
+Home page:
+	- if the description box is collapsed to …, then on click: popup to show all text 
+
+
+* Area-label to icons
+* SEO
+* better semantic
+* page transitions
+* animations
+* On click the location: open google map displaying the covered areas
+* reChaptcha actiovation
+* share button should share the actual url
+
+
+
+
+
