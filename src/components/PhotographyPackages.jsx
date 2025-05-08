@@ -1,4 +1,4 @@
-const PhotographyPackages = () => {
+const PhotographyPackages = ({ firstIndex, lastIndex }) => {
     const packages = [
         {
             title: "Maternity Photoshoot",
@@ -10,7 +10,7 @@ const PhotographyPackages = () => {
             title: "Newborn Photography",
             price: "£100",
             description:
-                "Preserve the fleeting moments of your baby’s earliest days with a calm, gentle shoot designed to capture their tiny details and first expressions."
+                "Preserve the fleeting moments of your baby's earliest days with a calm, gentle shoot designed to capture their tiny details and first expressions."
         },
         {
             title: "Sitter Session",
@@ -28,7 +28,7 @@ const PhotographyPackages = () => {
             title: "Cake Smash Photoshoot",
             price: "£100",
             description:
-                "Celebrate your little one’s birthday with a fun-filled cake smash session full of giggles, frosting, and candid memories to cherish."
+                "Celebrate your little one's birthday with a fun-filled cake smash session full of giggles, frosting, and candid memories to cherish."
         },
         {
             title: "Engagement Photoshoot",
@@ -38,10 +38,12 @@ const PhotographyPackages = () => {
         },
     ];
 
+    const slicedPackage = packages.slice(firstIndex, lastIndex);
+
     return (
         <div className="photography-packeges">
             <div className="package-container">
-                {packages.map((pkg, index) => (
+                {slicedPackage.map((pkg, index) => (
                     <div className="package-card" key={index}>
                         <h4>{pkg.title}</h4>
                         {false && <p className="price">FROM {pkg.price}</p>}

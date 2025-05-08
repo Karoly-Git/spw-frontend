@@ -46,17 +46,32 @@ export default function Home() {
 
                 <section>
                     <CategoryContainer category={categories.maternity} flipped />
-                    <CategoryContainer category={categories.newborn} />
                 </section>
 
                 <section>
                     <HighlightMetrics />
+                </section>
+
+                <section>
+                    <CategoryContainer category={categories.newborn} />
+                </section>
+
+                <section>
                     <ReviewSlider reviews={threeReviews} />
                 </section>
 
                 <section>
-                    <CategoryContainer category={categories.sitterSession} />
-                    <CategoryContainer category={categories.family} flipped />
+                    <CategoryContainer category={categories.sitterSession} flipped />
+                </section>
+
+
+                <section>
+                    <PhotographyPackages firstIndex={0} lastIndex={3} />
+                    <BookButton />
+                </section>
+
+                <section>
+                    <CategoryContainer category={categories.family} />
                 </section>
 
                 <section>
@@ -64,14 +79,19 @@ export default function Home() {
                         content="Photoshoots starting from just £100 - capture moments that last a lifetime!"
                         bannerId="price-banner"
                     />
-
-                    <PhotographyPackages />
-                    <BookButton />
                 </section>
 
                 <section>
                     <CategoryContainer category={categories.cakeSmash} flipped />
+                </section>
+
+                <section>
                     <CategoryContainer category={categories.engagement} />
+                </section>
+
+                <section>
+                    <PhotographyPackages firstIndex={3} lastIndex={6} />
+                    <BookButton />
                 </section>
             </div>
         </div>

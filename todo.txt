@@ -18,6 +18,7 @@ Home page:
 * get forms apart in separate folder
 * setup server side emailing, reCaptcha
 * potential improvement: blog, database for messages and subbscriptions
+* make font sizes uniform and centralized
 
 
 

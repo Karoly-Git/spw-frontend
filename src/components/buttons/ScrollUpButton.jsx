@@ -23,12 +23,12 @@ export default function ScrollUpButton() {
     };
 
     return (
-        <div
+        <button
             className='screen-side-btn scroll-up-btn'
             onClick={scrollToTop}
             style={{ right: isScrollBtnVisible ? '0.5rem' : '-3rem' }}
         >
             <ArrowIcon className='icon' />
-        </div>
+        </button>
     )
 }

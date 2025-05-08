@@ -35,6 +35,7 @@ nav ul li .nav-link.active-link::before, nav ul li .nav-link.active-link::after 
   content: "";
   position: absolute;
   border: 3px solid #007bff;
+  border: 3px solid #BFA16B;
 }
 nav ul li .nav-link.active-link::before {
   top: 0;
