@@ -8,7 +8,7 @@ import ActionButton from "../components/buttons/ActionButton";
 
 export default function Contact() {
     const [captchaToken, setCaptchaToken] = useState(null);
-    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+    const siteKey = "6LdB4zErAAAAAIGsGkAvQl75wc7gPCHfCB1c4O-2";
 
     const handleCaptchaChange = (token) => {
         setCaptchaToken(token);
