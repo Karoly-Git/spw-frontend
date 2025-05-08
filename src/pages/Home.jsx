@@ -86,6 +86,13 @@ export default function Home() {
                 </section>
 
                 <section>
+                    <Banner
+                        content="Why choose me? Because your special moments deserve a photographer who brings warmth, experience, and heart to every session."
+                        bannerId="why-choose-me-banner"
+                    />
+                </section>
+
+                <section>
                     <CategoryContainer category={categories.engagement} />
                 </section>
 

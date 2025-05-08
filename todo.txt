@@ -19,6 +19,7 @@ Home page:
 * setup server side emailing, reCaptcha
 * potential improvement: blog, database for messages and subbscriptions
 * make font sizes uniform and centralized
+* fr future: user account where they can see and download their photos
 
 
 
