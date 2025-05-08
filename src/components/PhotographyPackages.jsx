@@ -1,4 +1,4 @@
-const PhotographyPackages = ({ firstIndex, lastIndex }) => {
+export default function PhotographyPackages({ firstIndex, lastIndex }) {
     const packages = [
         {
             title: "Maternity Photoshoot",
@@ -41,18 +41,24 @@ const PhotographyPackages = ({ firstIndex, lastIndex }) => {
     const slicedPackage = packages.slice(firstIndex, lastIndex);
 
     return (
-        <div className="photography-packeges">
+        <section
+            className="photography-packages"
+            aria-label="Photography packages offered"
+        >
             <div className="package-container">
                 {slicedPackage.map((pkg, index) => (
-                    <div className="package-card" key={index}>
-                        <h4>{pkg.title}</h4>
-                        {false && <p className="price">FROM {pkg.price}</p>}
+                    <article
+                        className="package-card"
+                        key={index}
+                        aria-labelledby={`package-title-${index}`}
+                    >
+                        <h3 id={`package-title-${index}`}>{pkg.title}</h3>
+                        {/* You can re-enable price display here if needed */}
+                        {/* <p className="price">FROM {pkg.price}</p> */}
                         <p className="description">{pkg.description}</p>
-                    </div>
+                    </article>
                 ))}
             </div>
-        </div>
+        </section>
     );
-};
-
-export default PhotographyPackages;
+}
