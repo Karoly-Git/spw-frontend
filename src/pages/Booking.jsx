@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import DatePicker from "react-datepicker";
+import { addMonths } from "date-fns";
+import "react-datepicker/dist/react-datepicker.css";
 import ActionButton from "../components/buttons/ActionButton";
 
 export default function Booking() {
@@ -7,7 +10,7 @@ export default function Booking() {
         name: "",
         email: "",
         phone: "",
-        date: "",
+        date: null,
         time: "",
         sessionType: "portrait",
         notes: "",
@@ -18,10 +21,8 @@ export default function Booking() {
     const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     const handleChange = (e) => {
-        setFormData((prev) => ({
-            ...prev,
-            [e.target.name]: e.target.value,
-        }));
+        const { name, value } = e.target;
+        setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
     const handleCaptchaChange = (token) => {
@@ -36,130 +37,146 @@ export default function Booking() {
             return;
         }
 
-        // Send `formData` and `captchaToken` to backend/email service
+        // Process formData here
         console.log("Booking submitted:", formData, "reCAPTCHA token:", captchaToken);
         setSubmitted(true);
     };
 
-    if (submitted) {
-        return (
-            <div className="page booking-page">
-                <div className="page-content">
-                    <div className="form-box">
-                        <h1>Book a Photoshoot</h1>
-                        <p>Thank you! Your booking request has been received.</p>
-                    </div>
-                </div>
-            </div>
-        );
-    }
-
     return (
         <div className="page booking-page">
             <div className="page-content">
+                <div className="contact-box">
+                    <div className="contact-box-content"></div>
+                </div>
+
                 <div className="form-box">
-                    <h1>Book a Photoshoot</h1>
-                    <p>Please complete the form below to request a booking.</p>
+                    {submitted ? (
+                        <>
+                            <h1>Book a Photoshoot</h1>
+                            <p>Thank you! Your booking request has been received.</p>
+                        </>
+                    ) : (
+                        <>
+                            <h1>Book a Photoshoot</h1>
+                            <p>Please complete the form below to request a booking.</p>
 
-                    <form onSubmit={handleSubmit}>
-                        <label htmlFor="name">Name *</label>
-                        <input
-                            className="input must-be-given"
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                        />
+                            <form onSubmit={handleSubmit}>
+                                <label htmlFor="name">Name *</label>
+                                <input
+                                    className="input must-be-given"
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Enter your name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
+                                />
 
-                        <label htmlFor="email">Email *</label>
-                        <input
-                            className="input must-be-given"
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                        />
+                                <label htmlFor="email">Email *</label>
+                                <input
+                                    className="input must-be-given"
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
+                                />
 
-                        <label htmlFor="phone">Telephone *</label>
-                        <input
-                            className="input must-be-given"
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="Enter your phone number"
-                            value={formData.phone}
-                            onChange={handleChange}
-                            required
-                        />
+                                <label htmlFor="phone">Telephone *</label>
+                                <input
+                                    className="input must-be-given"
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                    required
+                                />
 
-                        <label htmlFor="date">Preferred Date *</label>
-                        <input
-                            className="input must-be-given"
-                            type="date"
-                            id="date"
-                            name="date"
-                            value={formData.date}
-                            onChange={handleChange}
-                            required
-                        />
+                                <label htmlFor="date">Preferred Date *</label>
+                                <DatePicker
+                                    selected={formData.date}
+                                    onChange={(date) => setFormData((prev) => ({ ...prev, date }))}
+                                    className="input must-be-given"
+                                    placeholderText="Select a date"
+                                    dateFormat="dd/MM/yyyy"
+                                    minDate={new Date()}
+                                    maxDate={addMonths(new Date(), 3)}
+                                    id="date"
+                                    name="date"
+                                    required
+                                />
 
-                        <label htmlFor="time">Preferred Time *</label>
-                        <input
-                            className="input must-be-given"
-                            type="time"
-                            id="time"
-                            name="time"
-                            value={formData.time}
-                            onChange={handleChange}
-                            required
-                        />
 
-                        <label htmlFor="sessionType">Session Type *</label>
-                        <select
-                            className="input must-be-given"
-                            id="sessionType"
-                            name="sessionType"
-                            value={formData.sessionType}
-                            onChange={handleChange}
-                            required
-                        >
-                            <option value="portrait">Portrait</option>
-                            <option value="wedding">Wedding</option>
-                            <option value="event">Event</option>
-                            <option value="family">Family</option>
-                        </select>
+                                <label htmlFor="time">Preferred Time *</label>
+                                <DatePicker
+                                    selected={formData.time}
+                                    onChange={(time) => setFormData((prev) => ({ ...prev, time }))}
+                                    showTimeSelect
+                                    showTimeSelectOnly
+                                    timeIntervals={60}
+                                    timeCaption="Time"
+                                    dateFormat="h:mm aa"
+                                    minTime={new Date().setHours(9, 0)}
+                                    maxTime={new Date().setHours(18, 0)}
+                                    className="input must-be-given"
+                                    placeholderText="Select a time"
+                                    id="time"
+                                    name="time"
+                                    required
+                                />
 
-                        <label htmlFor="notes">Additional Notes</label>
-                        <textarea
-                            className="message"
-                            id="notes"
-                            name="notes"
-                            placeholder="Any special requests or notes?"
-                            value={formData.notes}
-                            onChange={handleChange}
-                        ></textarea>
+                                <label htmlFor="sessionType">Session Type *</label>
+                                <select
+                                    className="input must-be-given"
+                                    id="sessionType"
+                                    name="sessionType"
+                                    value={formData.sessionType}
+                                    onChange={handleChange}
+                                    required
+                                >
+                                    <option value="maternity">Maternity</option>
+                                    <option value="newborn">Newborn</option>
+                                    <option value="sitter-session">Sitter Session</option>
+                                    <option value="family">Family</option>
+                                    <option value="cake-smash">Cake Smash</option>
+                                    <option value="engagement">Engagement</option>
+                                </select>
 
-                        <ReCAPTCHA
-                            sitekey={siteKey}
-                            onChange={handleCaptchaChange}
-                            className="recaptcha"
-                        />
+                                <label htmlFor="notes">Additional Notes</label>
+                                <textarea
+                                    className="message"
+                                    id="notes"
+                                    name="notes"
+                                    placeholder="Any special requests or notes?"
+                                    value={formData.notes}
+                                    onChange={handleChange}
+                                ></textarea>
 
-                        <ActionButton
-                            className="action-btn btn_submit js-submit-btn"
-                            type="submit"
-                            name="submit"
-                            text="Submit Booking"
-                        />
-                    </form>
+                                <div className="captcha-wrapper">
+                                    <label className="captcha-label">Please verify you're human *</label>
+                                    <ReCAPTCHA
+                                        sitekey={siteKey}
+                                        onChange={handleCaptchaChange}
+                                        className="recaptcha"
+                                    />
+                                </div>
+
+                                <ActionButton
+                                    className="action-btn btn_submit js-submit-btn"
+                                    type="submit"
+                                    name="submit"
+                                    text="Submit Booking"
+                                />
+                            </form>
+                        </>
+                    )}
                 </div>
             </div>
         </div>
     );
-};
+}
