@@ -28,6 +28,7 @@ import index5 from "../assets/images/portfolio/cakesmash-index.jpg";
 import index6 from "../assets/images/portfolio/engagement-index.jpg";
 
 import ShareButton from "../components/buttons/ShareButton.jsx";
+import Banner from "../components/Banner.jsx";
 
 export default function Portfolio() {
     const [maternityIndex, setMaternityIndex] = useState(-1);
@@ -78,6 +79,11 @@ export default function Portfolio() {
 
     return (
         <div className='page portfolio-page'>
+
+            <h1 className='pg-slogan'>
+                Timeless Moments Through My Lens<br />
+                <span className="pg-slogan-sub">Capturing the beauty of every stage in your story</span>
+            </h1>
 
             <ShareButton />
 

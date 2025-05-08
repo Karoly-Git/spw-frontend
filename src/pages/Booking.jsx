@@ -2,8 +2,20 @@ import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import DatePicker from "react-datepicker";
 import { addMonths } from "date-fns";
+import Select from "react-select";
+
 import "react-datepicker/dist/react-datepicker.css";
 import ActionButton from "../components/buttons/ActionButton";
+
+// Options for the session type dropdown
+const sessionOptions = [
+    { value: "maternity", label: "Maternity" },
+    { value: "newborn", label: "Newborn" },
+    { value: "sitter-session", label: "Sitter Session" },
+    { value: "family", label: "Family" },
+    { value: "cake-smash", label: "Cake Smash" },
+    { value: "engagement", label: "Engagement" },
+];
 
 export default function Booking() {
     const [formData, setFormData] = useState({
@@ -12,12 +24,12 @@ export default function Booking() {
         phone: "",
         date: null,
         time: "",
-        sessionType: "portrait",
+        sessionType: sessionOptions[0].value,
         notes: "",
     });
+
     const [captchaToken, setCaptchaToken] = useState(null);
     const [submitted, setSubmitted] = useState(false);
-
     const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
     const handleChange = (e) => {
@@ -31,22 +43,24 @@ export default function Booking() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         if (!captchaToken) {
             alert("Please verify you're not a robot.");
             return;
         }
-
-        // Process formData here
         console.log("Booking submitted:", formData, "reCAPTCHA token:", captchaToken);
         setSubmitted(true);
     };
 
     return (
-        <div className="page booking-page">
+        <div className="page form-page booking-page">
+            <h1 className='pg-slogan'>
+                Start Your Journey with a Simple Booking<br />
+                <span className="pg-slogan-sub">Reserve your session and let’s create something beautiful together</span>
+            </h1>
+
             <div className="page-content">
-                <div className="contact-box">
-                    <div className="contact-box-content"></div>
+                <div className="image-box image-box-booking-page">
+                    <div className="image-box-content"></div>
                 </div>
 
                 <div className="form-box">
@@ -100,7 +114,9 @@ export default function Booking() {
                                 <label htmlFor="date">Preferred Date *</label>
                                 <DatePicker
                                     selected={formData.date}
-                                    onChange={(date) => setFormData((prev) => ({ ...prev, date }))}
+                                    onChange={(date) =>
+                                        setFormData((prev) => ({ ...prev, date }))
+                                    }
                                     className="input must-be-given"
                                     placeholderText="Select a date"
                                     dateFormat="dd/MM/yyyy"
@@ -111,11 +127,12 @@ export default function Booking() {
                                     required
                                 />
 
-
                                 <label htmlFor="time">Preferred Time *</label>
                                 <DatePicker
                                     selected={formData.time}
-                                    onChange={(time) => setFormData((prev) => ({ ...prev, time }))}
+                                    onChange={(time) =>
+                                        setFormData((prev) => ({ ...prev, time }))
+                                    }
                                     showTimeSelect
                                     showTimeSelectOnly
                                     timeIntervals={60}
@@ -131,21 +148,22 @@ export default function Booking() {
                                 />
 
                                 <label htmlFor="sessionType">Session Type *</label>
-                                <select
-                                    className="input must-be-given"
+                                <Select
                                     id="sessionType"
                                     name="sessionType"
-                                    value={formData.sessionType}
-                                    onChange={handleChange}
-                                    required
-                                >
-                                    <option value="maternity">Maternity</option>
-                                    <option value="newborn">Newborn</option>
-                                    <option value="sitter-session">Sitter Session</option>
-                                    <option value="family">Family</option>
-                                    <option value="cake-smash">Cake Smash</option>
-                                    <option value="engagement">Engagement</option>
-                                </select>
+                                    options={sessionOptions}
+                                    value={sessionOptions.find(
+                                        (option) => option.value === formData.sessionType
+                                    )}
+                                    onChange={(selectedOption) =>
+                                        setFormData((prev) => ({
+                                            ...prev,
+                                            sessionType: selectedOption.value,
+                                        }))
+                                    }
+                                    className="react-select-container"
+                                    classNamePrefix="react-select"
+                                />
 
                                 <label htmlFor="notes">Additional Notes</label>
                                 <textarea
@@ -157,14 +175,12 @@ export default function Booking() {
                                     onChange={handleChange}
                                 ></textarea>
 
-                                <div className="captcha-wrapper">
-                                    <label className="captcha-label">Please verify you're human *</label>
-                                    <ReCAPTCHA
-                                        sitekey={siteKey}
-                                        onChange={handleCaptchaChange}
-                                        className="recaptcha"
-                                    />
-                                </div>
+                                <label className="captcha-label">Please verify you're human *</label>
+                                <ReCAPTCHA
+                                    sitekey={siteKey}
+                                    onChange={handleCaptchaChange}
+                                    className="recaptcha"
+                                />
 
                                 <ActionButton
                                     className="action-btn btn_submit js-submit-btn"

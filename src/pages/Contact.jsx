@@ -27,10 +27,15 @@ export default function Contact() {
     };
 
     return (
-        <div className='page contact-page'>
+        <div className='page form-page contact-page'>
+            <h1 className='pg-slogan'>
+                Every Great Story Starts With a Message<br />
+                <span className="pg-slogan-sub">Reach out — I’d love to hear from you</span>
+            </h1>
+
             <div className='page-content'>
-                <div className='contact-box'>
-                    <address className='contact-box-content'>
+                <div className='image-box image-box-contact-page'>
+                    <address className='image-box-content'>
                         <div className='detail'>
                             <LocationIcon className='icon' />
                             Cheam, Sutton and surrounding areas
@@ -94,6 +99,7 @@ export default function Contact() {
                             required
                         ></textarea>
 
+                        <label className="captcha-label">Please verify you're human *</label>
                         <ReCAPTCHA
                             sitekey={siteKey}
                             onChange={handleCaptchaChange}

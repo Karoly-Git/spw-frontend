@@ -5,12 +5,11 @@ import BookButton from '../components/buttons/BookButton';
 export default function About() {
     return (
         <div className="page about-page">
-            <section>
-                <Banner
-                    content="Award-winning, family-friendly photography — creating timeless images you'll treasure forever."
-                    bannerId="why-me-banner"
-                />
-            </section>
+
+            <h1 className='pg-slogan'>
+                Award-Winning Photographer<br />
+                <span className="pg-slogan-sub">Timeless images of love, family & new beginnings</span>
+            </h1>
 
             <div className="content">
                 <section className='wrapper'>

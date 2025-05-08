@@ -20,7 +20,8 @@ Home page:
 * potential improvement: blog, database for messages and subbscriptions
 * make font sizes uniform and centralized
 * fr future: user account where they can see and download their photos
-
+* merge contact and booking styles
+* font styles to a separate style file
 
 
 

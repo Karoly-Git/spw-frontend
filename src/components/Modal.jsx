@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function Modal({ isOpen, onClose, quote, name, bgColor }) {
+export default function Modal({ isOpen, onClose, quote, name }) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -21,7 +21,6 @@ export default function Modal({ isOpen, onClose, quote, name, bgColor }) {
             <div
                 className={`modal-content ${isVisible ? 'visible' : ''}`}
                 onClick={(e) => e.stopPropagation()}
-                style={{ backgroundColor: bgColor }}
             >
                 <button className="modal-close" onClick={onClose}>×</button>
                 <blockquote>{quote}</blockquote>

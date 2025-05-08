@@ -22,7 +22,11 @@ export default function Testimonials() {
     return (
         <div className='page testimonials-page'>
             <div className='content'>
-                <h1>What My Clients Say</h1>
+
+                <h1 className='pg-slogan'>
+                    What My Clients Say<br />
+                    <span className="pg-slogan-sub">Kind words from families I've had the joy of photographing</span>
+                </h1>
 
                 <div className='grid'>
                     {testimonials.slice(0, visibleCount).map((review, index) => (
@@ -31,7 +35,7 @@ export default function Testimonials() {
                             className="card"
                             onClick={(e) => handleCardClick(review, e)}
                         >
-                            <blockquote>{trimToWords(review.quote, 20)}</blockquote>
+                            <blockquote>{trimToWords(review.quote, 12)}</blockquote>
                             <h3>{review.name}</h3>
                         </div>
                     ))}
@@ -39,7 +43,7 @@ export default function Testimonials() {
 
                 {visibleCount < testimonials.length && (
                     <ActionButton
-                        className="action-btn"
+                        className="action-btn load-more-btn"
                         type=""
                         name=""
                         text="Show More"

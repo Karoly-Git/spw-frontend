@@ -16,7 +16,7 @@ export default function CategoryContainer({ category, flipped }) {
             <div className={flipped ? 'category-box flipped' : 'category-box'}>
 
                 <div className='category-photo-box'>
-                    <h3 className='tagline'>{category.tagline}</h3>
+                    <h3>{category.tagline}</h3>
                     <div className={category.name}>
                         <NavLink
                             to={'/portfolio' + category.album}
