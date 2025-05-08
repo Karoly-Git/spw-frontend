@@ -15,6 +15,9 @@ Home page:
 * On click the location: open google map displaying the covered areas
 * reChaptcha actiovation
 * share button should share the actual url
+* get forms apart in separate folder
+* setup server side emailing, reCaptcha
+* potential improvement: blog, database for messages and subbscriptions
 
 
 
