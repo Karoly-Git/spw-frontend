@@ -1,4 +1,4 @@
-.photography-packeges {
+.photography-packages {
   background: url("../images/home/paralax3.jpg") no-repeat top right;
   background-size: cover;
   background-attachment: fixed;
@@ -6,49 +6,48 @@
   flex-direction: column;
   justify-content: center;
 }
-.photography-packeges .package-container {
+.photography-packages .package-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
 }
-.photography-packeges .package-card {
+.photography-packages article.package-card {
   display: flex;
   flex-direction: column;
   background-color: rgb(80, 114, 126);
   color: white;
   padding: 1.5rem;
   width: 100%;
-  height: 100%;
   max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  border-radius: 8px;
 }
-.photography-packeges .package-card h4 {
+.photography-packages article.package-card h3 {
   font-size: 2rem;
   position: relative;
 }
-.photography-packeges .package-card h4::after {
+.photography-packages article.package-card h3::after {
   content: "";
   display: block;
   width: 40%;
   height: 1px;
   background-color: #ccc;
-  margin-top: 0.5rem;
-  margin: 2rem auto;
+  margin: 2rem auto 1rem;
 }
-.photography-packeges .package-card .price {
+.photography-packages article.package-card .price {
   font-weight: bold;
   margin-bottom: 2rem;
 }
-.photography-packeges .package-card .description {
+.photography-packages article.package-card .description {
   margin-top: auto;
   margin-bottom: 2rem;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-.photography-packeges .package-card button {
+.photography-packages article.package-card button {
   align-self: center;
   background-color: transparent;
   border: 2px solid white;
@@ -59,6 +58,14 @@
   border-radius: 3px;
   transition: background-color 0.3s ease;
 }
-.photography-packeges .package-card button:hover {
+.photography-packages article.package-card button:hover {
   background-color: rgb(105, 142, 156);
+}
+@media (max-width: 768px) {
+  .photography-packages .package-container {
+    padding: 1rem;
+  }
+  .photography-packages article.package-card {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=PhotographyPackeges.css.map */

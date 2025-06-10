@@ -44,7 +44,7 @@ export default function Footer() {
 
             <div className='copyright'>
                 <span>© {currentYear} Sparkling Willow Photography</span>
-                <a href="https://karolyhornyak.co.uk" target="_blank" rel="noopener noreferrer">
+                <a href="https://karolyhornyak.com" target="_blank" rel="noopener noreferrer">
                     Website made by Karoly Hornyak
                 </a>
             </div>

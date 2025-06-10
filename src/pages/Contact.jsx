@@ -8,7 +8,7 @@ import ActionButton from "../components/buttons/ActionButton";
 
 export default function Contact() {
     const [captchaToken, setCaptchaToken] = useState(null);
-    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+    const siteKey = "6LdB4zErAAAAAIGsGkAvQl75wc7gPCHfCB1c4O-2";
 
     const handleCaptchaChange = (token) => {
         setCaptchaToken(token);
@@ -44,12 +44,14 @@ export default function Contact() {
                             <MobileIcon className='icon' />
                             <a href="tel:+447703676264">+44 7703 676264</a>
                         </div>
-                        <div className='detail'>
+
+                        {false && <div className='detail'>
                             <EmailIcon className='icon' />
                             <a href="mailto:nicky@sparklingwillowphotography.co.uk">
                                 nicky@sparklingwillowphotography.co.uk
                             </a>
-                        </div>
+                        </div>}
+
                     </address>
                 </div>
 

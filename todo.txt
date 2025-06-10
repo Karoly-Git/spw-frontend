@@ -12,16 +12,10 @@ Home page:
 * better semantic
 * page transitions
 * animations
-* On click the location: open google map displaying the covered areas
-* reChaptcha actiovation
 * share button should share the actual url
-* get forms apart in separate folder
+* get forms apart into separate folder
 * setup server side emailing, reCaptcha
-* potential improvement: blog, database for messages and subbscriptions
-* make font sizes uniform and centralized
-* fr future: user account where they can see and download their photos
-* merge contact and booking styles
-* font styles to a separate style file
+* potential future developments: blog, database for messages and subbscriptions, user account where they can see and download their photos
 
 
 

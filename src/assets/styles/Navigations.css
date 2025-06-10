@@ -79,7 +79,7 @@ nav ul li .nav-link.active-link::after {
 }
 
 .open-mobile-nav .mobile-nav-body {
-  top: 100px;
+  top: 99px;
 }
 
 @media (max-width: 950px) {

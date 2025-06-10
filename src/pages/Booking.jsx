@@ -30,7 +30,7 @@ export default function Booking() {
 
     const [captchaToken, setCaptchaToken] = useState(null);
     const [submitted, setSubmitted] = useState(false);
-    const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+    const siteKey = "6LdB4zErAAAAAIGsGkAvQl75wc7gPCHfCB1c4O-2";
 
     const handleChange = (e) => {
         const { name, value } = e.target;
