@@ -579,6 +579,12 @@
 }
 
 .testimonials-page {
+    background: url('../images/about/bg_opac_10.jpg');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     .content {
         max-width: 1440px;
         margin: 0 auto;
@@ -604,6 +610,8 @@
                 cursor: pointer;
                 position: relative;
                 border-radius: 1rem;
+
+                background-color: rgba(255, 255, 255, 0.7);
 
                 h3 {
                     font-size: 1.2rem;
@@ -637,7 +645,7 @@
 }
 
 .portfolio-page {
-    background: url('../images/portfolio/bg.jpg');
+    background: url('../images/about/bg_opac_10.jpg');
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
