@@ -429,6 +429,11 @@
   padding-left: 1rem;
   padding-top: 0.5rem;
 }
+@media (max-width: 1000px) {
+  .faq-page .content .question-container {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .faq-page .content .question-container {
     padding: 1rem 0.25rem;
