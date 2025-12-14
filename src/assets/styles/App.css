@@ -55,6 +55,7 @@ textarea {
 
 body {
   font-family: "Hubballi", cursive;
+  overflow: hidden;
 }
 
 ul {
