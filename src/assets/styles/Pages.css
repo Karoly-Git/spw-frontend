@@ -131,6 +131,11 @@
   color: #BFA16B;
   font-weight: normal;
 }
+@media (max-width: 1000px) {
+  .home-page .category-container header.category-photo-box h2 {
+    display: none;
+  }
+}
 .home-page .category-container header.category-photo-box > div {
   display: flex;
   justify-content: flex-end;
