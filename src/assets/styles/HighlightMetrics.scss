@@ -3,7 +3,7 @@
     justify-content: space-around;
     text-align: center;
     background: linear-gradient(120deg, #d4d4d4, #ffffff);
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: background 0.3s ease-in-out;
     margin-bottom: 6rem;
@@ -16,6 +16,10 @@
             font-size: 3.5rem;
             color: #BFA16B;
             transition: color 0.3s ease;
+
+            @media (max-width: 700px) {
+                font-size: 2.25rem;
+            }
         }
 
         h3 {
@@ -24,6 +28,10 @@
             color: #333;
             font-weight: 600;
             letter-spacing: 1px;
+
+            @media (max-width: 700px) {
+                font-size: 1.75rem;
+            }
         }
 
         p {
