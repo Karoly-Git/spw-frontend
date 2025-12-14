@@ -1,23 +1,20 @@
-Lazy load for images.
-
-In the albums:
-	- Add some text that personalizes the image, some info, interesting fact 
-
-Home page:
-	- if the description box is collapsed to …, then on click: popup to show all text 
-
-Others from mobile
+Design:
+	- Change image formats to webp.
+	- Pages fade transitions on page load
 
 
-* Area-label to icons
-* SEO
-* better semantic
-* page transitions
-* animations
-* share button should share the actual url
-* get forms apart into separate folder
-* setup server side emailing, reCaptcha
-* potential future developments: blog, database for messages and subbscriptions, user account where they can see and download their photos
+HTML
+	- Area-label to icons
+	- Get forms apart into separate folder
+	- Better semantic
+
+
+Future developments
+	- animations to components
+	- SEO (on frontend React?),
+	- blog,
+	- database for messages and subbscriptions,
+	- user account where they can see and download their photos
 
 
 
