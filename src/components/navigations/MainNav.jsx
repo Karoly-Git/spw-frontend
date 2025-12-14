@@ -8,7 +8,7 @@ export default function MainNav() {
         { name: 'Testimonials', to: '/testimonials', isDisplayed: true },
         { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: false },
         { name: 'Booking', to: '/booking', isDisplayed: true },
-        { name: 'Awards', to: '/awards', isDisplayed: true },
+        { name: 'Awards', to: '/awards', isDisplayed: false },
         { name: 'Contact', to: '/contact', isDisplayed: true }
     ];
 

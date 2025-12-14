@@ -17,7 +17,7 @@ export default function MobileNav() {
         { name: 'Portfolio', to: '/portfolio', isDisplayed: true },
         { name: 'Testimonials', to: '/testimonials', isDisplayed: true },
         { name: 'FAQ', to: '/frequently-asked-questions', isDisplayed: true },
-        { name: 'Awards', to: '/awards', isDisplayed: true },
+        { name: 'Awards', to: '/awards', isDisplayed: false },
         { name: 'Contact', to: '/contact', isDisplayed: true }
     ];
 
