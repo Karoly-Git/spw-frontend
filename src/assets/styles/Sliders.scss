@@ -118,6 +118,15 @@
     padding: 5rem;
     display: flex;
 
+    @media(max-width:750px) {
+        background: url('../images/home/paralax1a.jpg') no-repeat top right;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 5rem 0;
+        padding: 5rem;
+        display: flex;
+    }
+
     .slider-container {
         max-width: 400px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
