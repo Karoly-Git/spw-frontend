@@ -44,12 +44,14 @@ export default function Contact() {
                             <MobileIcon className='icon' />
                             <a href="tel:+447703676264">+44 7703 676264</a>
                         </div>
-                        <div className='detail'>
+
+                        {false && <div className='detail'>
                             <EmailIcon className='icon' />
                             <a href="mailto:nicky@sparklingwillowphotography.co.uk">
                                 nicky@sparklingwillowphotography.co.uk
                             </a>
-                        </div>
+                        </div>}
+
                     </address>
                 </div>
 
