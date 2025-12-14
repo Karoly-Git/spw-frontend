@@ -809,6 +809,7 @@
 .form-page .page-content .form-box form {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .form-page .page-content .form-box form label {
   font-weight: 600;
