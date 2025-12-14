@@ -6,6 +6,8 @@ In the albums:
 Home page:
 	- if the description box is collapsed to …, then on click: popup to show all text 
 
+Others from mobile
+
 
 * Area-label to icons
 * SEO
