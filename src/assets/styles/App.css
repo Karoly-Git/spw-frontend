@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.App {
+  overflow: hidden;
+}
+
 /* Custom Scrollbar for Webkit Browsers (Chrome, Safari, Edge) */
 ::-webkit-scrollbar {
   width: 12px;
@@ -55,7 +59,6 @@ textarea {
 
 body {
   font-family: "Hubballi", cursive;
-  overflow: hidden;
 }
 
 ul {
