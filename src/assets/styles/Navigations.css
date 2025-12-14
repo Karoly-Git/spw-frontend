@@ -57,9 +57,9 @@ nav ul li .nav-link.active-link::after {
 }
 .mobile-nav .mobile-nav-body {
   padding: 2rem;
-  top: -380px;
-  left: 0;
+  top: 99px;
   width: 100%;
+  right: -100%;
   background-color: rgb(75, 75, 75);
   position: absolute;
   display: flex;
@@ -79,7 +79,7 @@ nav ul li .nav-link.active-link::after {
 }
 
 .open-mobile-nav .mobile-nav-body {
-  top: 99px;
+  right: 0;
 }
 
 @media (max-width: 950px) {
