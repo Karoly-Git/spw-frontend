@@ -1,5 +1,4 @@
 import nicky from '../assets/images/about/me.jpg';
-import Banner from '../components/Banner';
 import BookButton from '../components/buttons/BookButton';
 
 export default function About() {

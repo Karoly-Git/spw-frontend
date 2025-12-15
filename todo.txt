@@ -1,6 +1,5 @@
 Design:
 	- Change image formats to webp.
-	- Pages fade transitions on page load
 
 
 HTML
