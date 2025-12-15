@@ -441,7 +441,7 @@
 }
 @media (max-width: 500px) {
   .faq-page .content .question-container {
-    padding: 1rem 0.25rem;
+    padding: 1rem 0.5rem;
   }
 }
 .faq-page .contact-help-box {
