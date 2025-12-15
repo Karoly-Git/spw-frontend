@@ -114,24 +114,32 @@
     background: url('../images/home/paralax1.webp') no-repeat top right;
     background-size: cover;
     background-attachment: fixed;
-    padding: 5rem 0;
-    padding: 5rem;
     display: flex;
+    padding: 5rem;
 
     @media(max-width:750px) {
         background: url('../images/home/paralax1a.jpg') no-repeat top right;
         background-size: cover;
         background-attachment: fixed;
-        padding: 5rem 0;
-        padding: 5rem;
-        display: flex;
+    }
+
+    @media(max-width:600px) {
+        padding: 5rem 1rem;
     }
 
     .slider-container {
         max-width: 400px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
-        background-color: rgba(200, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.7);
+
+        @media (max-width: 500px) {
+            max-width: 250px;
+        }
+
+        @media (max-width: 300px) {
+            width: 100%;
+        }
     }
 
     .testimonial-card {
