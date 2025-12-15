@@ -1,11 +1,8 @@
-Design:
-	- Change image formats to webp.
-
-
 HTML
 	- Area-label to icons
 	- Get forms apart into separate folder
 	- Better semantic
+	- Better folder structure
 
 
 Future developments
