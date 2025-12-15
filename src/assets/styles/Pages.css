@@ -293,7 +293,7 @@
 }
 
 .about-page {
-  background: url("../images/about/bg_opac_10.jpg") no-repeat center/cover fixed;
+  background: url("../images/about/bg_opac_10.webp") no-repeat center/cover fixed;
 }
 .about-page .content {
   max-width: 850px;
@@ -305,7 +305,7 @@
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
 .about-page .content .wrapper {
-  background: url("../images/about/bg_opac_10.jpg") no-repeat bottom;
+  background: url("../images/about/bg_opac_10.webp") no-repeat bottom;
   background-position-y: 165px;
   background-size: cover;
   width: 100%;
@@ -515,7 +515,7 @@
 }
 
 .testimonials-page {
-  background: url("../images/about/bg_opac_10.jpg");
+  background: url("../images/about/bg_opac_10.webp");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
@@ -573,7 +573,7 @@
 }
 
 .portfolio-page {
-  background: url("../images/about/bg_opac_10.jpg");
+  background: url("../images/about/bg_opac_10.webp");
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
@@ -777,10 +777,10 @@
   text-decoration: underline;
 }
 .form-page .page-content .image-box.image-box-contact-page {
-  background: url("../images/contact/camera.jpg") center/cover no-repeat;
+  background: url("../images/contact/camera.webp") center/cover no-repeat;
 }
 .form-page .page-content .image-box.image-box-booking-page {
-  background: url("../images/booking/calendar.jpg") center/cover no-repeat;
+  background: url("../images/booking/calendar.webp") center/cover no-repeat;
 }
 .form-page .page-content .image-box.image-box-booking-page .image-box-content {
   background-color: transparent;

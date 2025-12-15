@@ -94,7 +94,7 @@
 }
 /* ReviewSlider.css */
 .review-slider {
-  background: url("../images/home/paralax1.jpg") no-repeat top right;
+  background: url("../images/home/paralax1.webp") no-repeat top right;
   background-size: cover;
   background-attachment: fixed;
   padding: 5rem 0;
